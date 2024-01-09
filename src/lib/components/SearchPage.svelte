@@ -3,7 +3,7 @@
 	import CommonPage from './CommonPage.svelte';
 	import Input from './Input/Input.svelte';
 	import { browser } from '$app/environment';
-	import {pushState , replaceState} from '$app/navigation';
+	import { pushState, replaceState } from '$app/navigation';
 
 	export let title = 'Title';
 	export let search = '';

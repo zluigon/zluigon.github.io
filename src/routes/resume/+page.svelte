@@ -12,13 +12,10 @@
 			<a href={item}>
 				<Chip size={'1.25em'}>Download</Chip>
 			</a>
-			
 		{:else}
 			<Chip>Oops! no CV at the moment.</Chip>
 		{/if}
 	</div>
-
-	
 </CommonPage>
 
 <style lang="scss">

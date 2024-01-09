@@ -17,7 +17,7 @@ const MY_SKILLS = [
 		name: 'TypeScript',
 		logo: Assets.TypeScript,
 		description:
-			'TypeScript is an open-source language which builds on JavaScript, one of the world\'s most used tools, by adding static type definitions.',
+			"TypeScript is an open-source language which builds on JavaScript, one of the world's most used tools, by adding static type definitions.",
 		color: '#3178C6'
 	}),
 	s({
@@ -41,7 +41,7 @@ const MY_SKILLS = [
 		name: 'Spring',
 		logo: Assets.Spring,
 		description:
-			'Spring is an application framework and inversion of control container for the Java platform. The framework\'s core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform.',
+			"Spring is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform.",
 		color: '#6DB33F'
 	}),
 	s({
@@ -76,7 +76,7 @@ const MY_SKILLS = [
 			'Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. It is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.',
 		color: '#06B6D4'
 	}),
-	s({ 
+	s({
 		slug: 'git',
 		name: 'Git',
 		logo: Assets.Git,
@@ -108,7 +108,6 @@ const MY_SKILLS = [
 			'jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License.',
 		color: '#0769AD'
 	})
-
 ];
 
 export default MY_SKILLS;

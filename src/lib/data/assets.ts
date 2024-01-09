@@ -2,7 +2,6 @@ import type { Asset } from '$lib/types';
 import { theme } from '$lib/stores/theme';
 import { base } from '$app/paths';
 
-
 const gh = (file: string) => `${base}/logos/${file}`;
 
 const cv = (file: string) => `${base}/resume/${file}`;
@@ -78,7 +77,7 @@ const Assets = {
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
-    Codeup: a('codeup.png'),
+	Codeup: a('codeup.png'),
 	MySQL: a('mysql.svg'),
 	Spring: a('spring.svg'),
 	Git: a('git.svg'),

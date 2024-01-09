@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Icons } from '$lib/utils';
-import { viewBox } from './Icon';
+	import { viewBox } from './Icon';
 
 	let el: SVGElement;
 
