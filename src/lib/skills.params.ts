@@ -45,6 +45,14 @@ const MY_SKILLS = [
 		color: '#6DB33F'
 	}),
 	s({
+		slug: 'springboot',
+		name: 'Spring Boot',
+		logo: Assets.SpringBoot,
+		description:
+			'Spring Boot is an open-source micro framework maintained by SpringSource, a subsidiary of Pivotal, that provides a simpler way to create stand-alone, production-grade Spring based applications that you can run.',
+		color: '#6DB33F'
+	}),
+	s({
 		slug: 'html',
 		name: 'HTML5',
 		logo: Assets.HTML,
@@ -107,6 +115,14 @@ const MY_SKILLS = [
 		description:
 			'jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License.',
 		color: '#0769AD'
+	}),
+	s({
+		slug: 'c',
+		name: 'C',
+		logo: Assets.C,
+		description:
+			'C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions.',
+		color: '#A8B9CC'
 	})
 ];
 

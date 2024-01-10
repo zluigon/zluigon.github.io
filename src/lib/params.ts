@@ -42,6 +42,8 @@ export const getPlatformIcon = (platform: Platform): Icons => {
 			return Icons.Twitter;
 		case Platform.Youtube:
 			return Icons.Youtube;
+		case Platform.Resume:
+			return Icons.Resume;
 	}
 };
 
@@ -60,6 +62,10 @@ export const HOME: HomePageParams = {
 		{
 			platform: Platform.Email,
 			link: 'luis.nmn.gonzalez@gmail.com'
+		},
+		{
+			platform: Platform.Resume,
+			link: CV.CV
 		}
 	]
 };

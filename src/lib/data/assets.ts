@@ -82,7 +82,8 @@ const Assets = {
 	Spring: a('spring.svg'),
 	Git: a('git.svg'),
 	Thymeleaf: a('thymeleaf.svg'),
-	jQuery: a('jquery.svg')
+	jQuery: a('jquery.svg'),
+	SpringBoot: a('springboot.svg')
 };
 
 export default Assets;
