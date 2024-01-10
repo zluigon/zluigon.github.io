@@ -50,7 +50,7 @@ export const HOME: HomePageParams = {
 	firstName: 'Luis',
 	lastName: 'Gonzalez',
 	description:
-		'Software Engineer and USAF Veteran with a passion for building and designing software. I have a strong background in full-stack development and a passion for learning new technologies. I am a self-starter and a team player who is always looking for ways to improve my skills and help others.',
+		'Software Engineer and USAF Veteran with a passion for building and designing software. I have a strong background in full-stack development and a passion for learning new technologies.',
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/zluigon' },
 		{
