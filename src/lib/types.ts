@@ -33,6 +33,7 @@ export interface Link {
 	to: string;
 	label: string;
 	newTab?: boolean;
+	type: string;
 }
 
 export interface IconLink extends Link {

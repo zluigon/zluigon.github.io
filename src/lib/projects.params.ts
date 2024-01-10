@@ -4,35 +4,32 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'project-1',
 		color: '#5e95e3',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+		description: 'Long',
+		shortDescription: 'Short',
+		links: [{ to: 'https://github.com/', label: 'GitHub', type:'code'}, { to: 'https://linkedin.com/', label: 'LinkedIn', type:''}],
 		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+		name: 'project 1',
 		period: {
-			from: new Date()
+			from: new Date(2023, 1, 1),
+			to: new Date(2023, 2, 1)
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
+		skills: getSkills('js', 'html', 'css'),
 		type: 'Website Template'
 	},
 	{
-		slug: 'slick-portfolio-svelte',
+		slug: 'project-2',
 		color: '#ff3e00',
-		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+		description: 'Long',
+		shortDescription: 'Short',
+		links: [],
+		logo: Assets.Unknown,
+		name: 'project 2',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
+		skills: getSkills('java', 'springboot', 'thymeleaf', 'js', 'html', 'css', 'bootstrap'),
 		type: 'Website Template',
 		screenshots: [
 			{

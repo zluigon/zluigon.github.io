@@ -3,6 +3,7 @@
 
 	export let label: string;
 	export let to: string;
+	export let type: string;
 </script>
 
 <a
@@ -13,7 +14,12 @@
 	rel="noreferrer"
 	data-help={label}
 >
+	{#if type == 'code'}
+	<UIcon icon="i-carbon-code" classes="text-[var(--secondary-text)]" />
+	{:else}
+		 <!-- else content here -->
 	<UIcon icon="i-carbon-link" classes="text-[var(--secondary-text)]" />
+	{/if}
 </a>
 
 <style lang="scss">

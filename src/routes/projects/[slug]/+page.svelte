@@ -45,7 +45,12 @@
 						{#each data.project.links as item}
 							<Chip href={item.to}>
 								<div class="row-center gap-2">
+									{#if item.type == 'code'}
+									<UIcon icon="i-carbon-code" />
+									{:else}
 									<UIcon icon="i-carbon-link" />
+									{/if}
+									
 									<span>{item.label}</span>
 								</div>
 							</Chip>
