@@ -52,9 +52,9 @@
 				on:click={() => toggleTheme()}
 			>
 				{#if $theme}
-					<UIcon icon="i-carbon-moon" />
-				{:else}
 					<UIcon icon="i-carbon-sun" />
+				{:else}
+					<UIcon icon="i-carbon-moon" />
 				{/if}
 			</button>
 		</div>

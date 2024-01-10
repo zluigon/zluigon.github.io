@@ -8,7 +8,10 @@ const MY_PROJECTS: Array<Project> = [
 		color: '#5e95e3',
 		description: 'Long',
 		shortDescription: 'Short',
-		links: [{ to: 'https://github.com/', label: 'GitHub', type:'code'}, { to: 'https://linkedin.com/', label: 'LinkedIn', type:''}],
+		links: [
+			{ to: 'https://github.com/', label: 'GitHub', type: 'code' },
+			{ to: 'https://linkedin.com/', label: 'Live Site', type: '' }
+		],
 		logo: Assets.Unknown,
 		name: 'project 1',
 		period: {
@@ -16,6 +19,21 @@ const MY_PROJECTS: Array<Project> = [
 			to: new Date(2023, 2, 1)
 		},
 		skills: getSkills('js', 'html', 'css'),
+		type: 'Website Template'
+	},
+	{
+		slug: 'project-3',
+		color: '#adff2f',
+		description: 'Long',
+		shortDescription: 'Short',
+		links: [],
+		logo: Assets.Unknown,
+		name: 'project 3',
+		period: {
+			from: new Date(2023, 1, 1),
+			to: new Date(2023, 2, 1)
+		},
+		skills: getSkills('js', 'html', 'css', 'jquery', 'bootstrap'),
 		type: 'Website Template'
 	},
 	{
@@ -27,9 +45,10 @@ const MY_PROJECTS: Array<Project> = [
 		logo: Assets.Unknown,
 		name: 'project 2',
 		period: {
-			from: new Date()
+			from: new Date(2023, 5, 1),
+			to: new Date(2023, 5, 16)
 		},
-		skills: getSkills('java', 'springboot', 'thymeleaf', 'js', 'html', 'css', 'bootstrap'),
+		skills: getSkills('java', 'springboot', 'thymeleaf', 'js', 'html', 'css', 'bootstrap', 'mysql'),
 		type: 'Website Template',
 		screenshots: [
 			{

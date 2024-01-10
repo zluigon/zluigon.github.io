@@ -39,7 +39,7 @@
 		class="row m-b-15px justify-between text-[var(--secondary-text)] text-0.9em font-italic font-300"
 	>
 		<p>{project.type}</p>
-		<p>{period}</p>
+		<!-- <p>{period}</p> -->
 	</div>
 	<p class="text-[0.95em] text-[var(--secondary-text)] font-300 m-t-20px m-b-40px flex-1">
 		{project.shortDescription}
