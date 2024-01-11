@@ -61,7 +61,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		color: '#ffffff',
 		links: [],
 		logo: Assets.USAF,
-		shortDescription: ''
+		shortDescription: 'short description'
 	}
 ];
 
