@@ -4,7 +4,7 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
-		slug: 'project-1',
+		slug: 'coffeeshop',
 		color: '#5e95e3',
 		description: 'Long',
 		shortDescription: 'Short',
@@ -13,28 +13,43 @@ const MY_PROJECTS: Array<Project> = [
 			{ to: 'https://linkedin.com/', label: 'Live Site', type: '' }
 		],
 		logo: Assets.Unknown,
-		name: 'project 1',
+		name: 'CoffeeProject',
 		period: {
 			from: new Date(2023, 1),
 			to: new Date(2023, 1)
 		},
 		skills: getSkills('js', 'html', 'css'),
-		type: 'Website Template'
+		type: 'Web Application'
 	},
 	{
-		slug: 'project-3',
+		slug: 'weatherapp',
 		color: '#adff2f',
 		description: 'Long',
 		shortDescription: 'Short',
 		links: [],
 		logo: Assets.Unknown,
-		name: 'project 3',
+		name: 'WeatherApp',
 		period: {
 			from: new Date(2023, 2),
 			to: new Date(2023, 2)
 		},
 		skills: getSkills('js', 'html', 'css', 'jquery', 'bootstrap'),
-		type: 'Website Template'
+		type: 'Web Application'
+	},
+	{
+		slug: 'flix',
+		color: '#ff3e00',
+		description: 'Long',
+		shortDescription: 'Short',
+		links: [],
+		logo: Assets.Unknown,
+		name: 'Flix',
+		period: {
+			from: new Date(2023, 3),
+			to: new Date(2023, 3)
+		},
+		skills: getSkills('js', 'html', 'css', 'jquery', 'bootstrap'),
+		type: 'Web Application'
 	},
 	{
 		slug: 'pawspursuit',
