@@ -83,7 +83,10 @@ const Assets = {
 	Git: a('git.svg'),
 	Thymeleaf: a('thymeleaf.svg'),
 	jQuery: a('jquery.svg'),
-	SpringBoot: a('springboot.svg')
+	SpringBoot: a('springboot.svg'),
+	Rymax: a('rymax.png'),
+	Amazon: a('amazon.svg'),
+	USAF: a('us-air-force.svg')
 };
 
 export default Assets;

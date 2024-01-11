@@ -21,7 +21,7 @@
 		if (window) {
 			const parsed = marked.parse(content);
 
-			container.innerHTML = sanitizer.sanitize(parsed);
+			container.innerHTML = sanitizer.sanitize(parsed.toString());
 
 			Prism.highlightAllUnder(container);
 		}
