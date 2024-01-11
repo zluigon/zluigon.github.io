@@ -53,6 +53,14 @@ const MY_SKILLS = [
 		color: '#6DB33F'
 	}),
 	s({
+		slug: 'springsecurity',
+		name: 'Spring Security',
+		logo: Assets.SpringSecurity,
+		description:
+			'Spring Security is a powerful and highly customizable authentication and access-control framework. It is the de-facto standard for securing Spring-based applications.',
+		color: '#6DB33F'
+	}),
+	s({
 		slug: 'html',
 		name: 'HTML5',
 		logo: Assets.HTML,

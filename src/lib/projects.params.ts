@@ -15,8 +15,8 @@ const MY_PROJECTS: Array<Project> = [
 		logo: Assets.Unknown,
 		name: 'project 1',
 		period: {
-			from: new Date(2023, 1, 1),
-			to: new Date(2023, 2, 1)
+			from: new Date(2023, 1),
+			to: new Date(2023, 1)
 		},
 		skills: getSkills('js', 'html', 'css'),
 		type: 'Website Template'
@@ -30,26 +30,26 @@ const MY_PROJECTS: Array<Project> = [
 		logo: Assets.Unknown,
 		name: 'project 3',
 		period: {
-			from: new Date(2023, 1, 1),
-			to: new Date(2023, 2, 1)
+			from: new Date(2023, 2),
+			to: new Date(2023, 2)
 		},
 		skills: getSkills('js', 'html', 'css', 'jquery', 'bootstrap'),
 		type: 'Website Template'
 	},
 	{
-		slug: 'project-2',
+		slug: 'pawspursuit',
 		color: '#ff3e00',
-		description: 'Long',
-		shortDescription: 'Short',
+		description: 'PawsPursuit is an online platform committed to reuniting you with your beloved furry, feathery, or scaly companion. I designed and built the database using JPA and created controllers for seamless front-end-to-database communication. Using Spring Security I implemented a robust user authentication system and improved the platform\'s UX/UI for enhanced usability. Additionally, I integrated the Mapbox API for geolocation services and TalkJS for messaging functionality, enabling users to communicate and collaborate efficiently.',
+		shortDescription: 'Full-stack web application built with Spring Boot, Spring Security, and Thymeleaf.',
 		links: [],
 		logo: Assets.Unknown,
-		name: 'project 2',
+		name: 'PawsPursuit',
 		period: {
 			from: new Date(2023, 5, 1),
 			to: new Date(2023, 5, 16)
 		},
-		skills: getSkills('java', 'springboot', 'thymeleaf', 'js', 'html', 'css', 'bootstrap', 'mysql'),
-		type: 'Website Template',
+		skills: getSkills('java', 'springboot', 'thymeleaf', 'js', 'html', 'css', 'bootstrap', 'mysql', 'springsecurity'),
+		type: 'Full-stack Web Application',
 		screenshots: [
 			{
 				label: 'screen 1',
