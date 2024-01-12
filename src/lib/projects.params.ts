@@ -22,10 +22,12 @@ const MY_PROJECTS: Array<Project> = [
 		type: 'Web Application'
 	},
 	{
-		slug: 'weatherapp',
+		slug: 'weather-map',
 		color: '#adff2f',
-		description: 'This project involves creating a web application called <code>WeatherMap</code> that utilizes HTML, CSS, jQuery, and the OpenWeatherMap API to display current weather conditions and a five-day forecast for a specified city. The application also integrates Mapbox API to allow users to drop a pin on any location on the map, retrieve coordinates, and update the weather forecast accordingly.',
-		shortDescription: 'Web application that displays current weather conditions and a five-day forecast for a specified city.',
+		description:
+			'This project involves creating a web application called <code>WeatherMap</code> that utilizes HTML, CSS, jQuery, and the OpenWeatherMap API to display current weather conditions and a five-day forecast for a specified city. The application also integrates Mapbox API to allow users to drop a pin on any location on the map, retrieve coordinates, and update the weather forecast accordingly.',
+		shortDescription:
+			'Web application that displays current weather conditions and a five-day forecast for a specified city.',
 		links: [
 			{ to: 'https://luisgonzalez.dev/weather-map/', label: 'Live Site', type: '' },
 			{ to: 'https://github.com/zluigon/weather-map', label: 'GitHub', type: 'code' }
