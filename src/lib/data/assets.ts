@@ -86,7 +86,7 @@ const Assets = {
 	SpringBoot: a('springboot.svg'),
 	Rymax: a('rymax.png'),
 	Amazon: a('amazon.svg'),
-	USAF: a('us-air-force.svg'),
+	USAF: a('US_AF.svg'),
 	SpringSecurity: a('springsecurity.svg'),
 };
 
