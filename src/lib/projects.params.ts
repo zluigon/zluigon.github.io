@@ -10,7 +10,7 @@ const MY_PROJECTS: Array<Project> = [
 		shortDescription: 'Short',
 		links: [
 			{ to: 'https://github.com/', label: 'GitHub', type: 'code' },
-			{ to: 'https://linkedin.com/', label: 'Live Site', type: '' }
+			{ to: 'https://google.com/', label: 'Live Site', type: '' }
 		],
 		logo: Assets.Unknown,
 		name: 'CoffeeProject',
@@ -24,9 +24,12 @@ const MY_PROJECTS: Array<Project> = [
 	{
 		slug: 'weatherapp',
 		color: '#adff2f',
-		description: 'Long',
-		shortDescription: 'Short',
-		links: [],
+		description: 'This project involves creating a web application called <code>WeatherMap</code> that utilizes HTML, CSS, jQuery, and the OpenWeatherMap API to display current weather conditions and a five-day forecast for a specified city. The application also integrates Mapbox API to allow users to drop a pin on any location on the map, retrieve coordinates, and update the weather forecast accordingly.',
+		shortDescription: 'Web application that displays current weather conditions and a five-day forecast for a specified city.',
+		links: [
+			{ to: 'https://luisgonzalez.dev/weather-map/', label: 'Live Site', type: '' },
+			{ to: 'https://github.com/zluigon/weather-map', label: 'GitHub', type: 'code' }
+		],
 		logo: Assets.Unknown,
 		name: 'WeatherApp',
 		period: {
@@ -54,8 +57,10 @@ const MY_PROJECTS: Array<Project> = [
 	{
 		slug: 'pawspursuit',
 		color: '#ff3e00',
-		description: 'PawsPursuit is an online platform committed to reuniting you with your beloved furry, feathery, or scaly companion. I designed and built the database using JPA and created controllers for seamless front-end-to-database communication. Using Spring Security I implemented a robust user authentication system and improved the platform\'s UX/UI for enhanced usability. Additionally, I integrated the Mapbox API for geolocation services and TalkJS for messaging functionality, enabling users to communicate and collaborate efficiently.',
-		shortDescription: 'Full-stack web application built with Spring Boot, Spring Security, and Thymeleaf.',
+		description:
+			"PawsPursuit is an online platform committed to reuniting you with your beloved furry, feathery, or scaly companion. I designed and built the database using JPA and created controllers for seamless front-end-to-database communication. Using Spring Security I implemented a robust user authentication system and improved the platform's UX/UI for enhanced usability. Additionally, I integrated the Mapbox API for geolocation services and TalkJS for messaging functionality, enabling users to communicate and collaborate efficiently.",
+		shortDescription:
+			'Full-stack web application built with Spring Boot, Spring Security, and Thymeleaf.',
 		links: [],
 		logo: Assets.Unknown,
 		name: 'PawsPursuit',
@@ -63,7 +68,17 @@ const MY_PROJECTS: Array<Project> = [
 			from: new Date(2023, 5, 1),
 			to: new Date(2023, 5, 16)
 		},
-		skills: getSkills('java', 'springboot', 'thymeleaf', 'js', 'html', 'css', 'bootstrap', 'mysql', 'springsecurity'),
+		skills: getSkills(
+			'java',
+			'springboot',
+			'thymeleaf',
+			'js',
+			'html',
+			'css',
+			'bootstrap',
+			'mysql',
+			'springsecurity'
+		),
 		type: 'Full-stack Web Application',
 		screenshots: [
 			{
