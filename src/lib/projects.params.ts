@@ -33,7 +33,7 @@ const MY_PROJECTS: Array<Project> = [
 			{ to: 'https://github.com/zluigon/weather-map', label: 'GitHub', type: 'code' }
 		],
 		logo: Assets.Unknown,
-		name: 'WeatherApp',
+		name: 'WeatherMap',
 		period: {
 			from: new Date(2023, 2),
 			to: new Date(2023, 2)
