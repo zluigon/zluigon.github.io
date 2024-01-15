@@ -7,7 +7,7 @@ const gh = (file: string) => `${base}/logos/${file}`;
 const cv = (file: string) => `${base}/resume/${file}`;
 
 export const CV = {
-	CV: cv('luis_gonzalez.pdf')
+	CV: cv('Luis_Gonzalez_Resume.pdf'),
 };
 
 const a = (light: string, dark?: string): Asset =>
