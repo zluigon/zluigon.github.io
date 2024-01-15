@@ -29,7 +29,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		location: 'Oklahoma City, OK',
 		period: { from: new Date(2019, 8), to: new Date(2021, 11) },
 		skills: getSkills(),
-		name: 'ICQA Associate',
+		name: 'Inventory Control Quality Assurance Associate',
 		color: '#ffffff',
 		links: [],
 		logo: Assets.Amazon,
