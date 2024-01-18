@@ -67,7 +67,7 @@ export const HOME: HomePageParams = {
 		},
 		{
 			platform: Platform.Download,
-			link: CV.CV
+			link: 'https://docs.google.com/document/d/1F9354AII9r7lxVu0iee0-ogjx7oF8nlS2ePFs06TxS0/edit?usp=sharing'
 		}
 	]
 };
