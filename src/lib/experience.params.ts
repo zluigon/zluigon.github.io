@@ -7,7 +7,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		slug: 'rymax',
 		company: 'Rymax Inc.',
 		description:
-			"<ul><li>Successfully managed and directed a team of 15 associates, achieving a 20% increase in productivity and meeting operational goals through effective organization and workflow</li><li>Trained and onboarded newly hired associates in packing and shipping processes, resulting in a 15% improvement in efficiency and a 10% increase in order fulfillment accuracy</li><li>Operated forklifts and order pickers to execute customer orders, ensuring timely fulfillment of requests with an average turnaround time of 24 hours</li></ul>",
+			'<ul><li>Successfully managed and directed a team of 15 associates, achieving a 20% increase in productivity and meeting operational goals through effective organization and workflow</li><li>Trained and onboarded newly hired associates in packing and shipping processes, resulting in a 15% improvement in efficiency and a 10% increase in order fulfillment accuracy</li><li>Operated forklifts and order pickers to execute customer orders, ensuring timely fulfillment of requests with an average turnaround time of 24 hours</li></ul>',
 		contract: ContractType.FullTime,
 		type: 'Logistics',
 		location: 'Pine Brook, NJ',
@@ -23,7 +23,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		slug: 'amazon-icqa',
 		company: 'Amazon',
 		description:
-			"<ul><li>Developed and trained new hires as an ICQA Ambassador, contributing to a 25% reduction in onboarding time and ensuring consistent standards of performance were met across the team</li><li>Conducted thorough inventory Q/A checks throughout the primary fulfillment warehouse in Oklahoma City, verifying virtual and physical inventory with a 99% accuracy rate and identifying and resolving defects promptly</li><li>Analyzed inventory data and resolved discrepancies as an ICQA Problem Solver, utilizing mobile computer units to investigate and maintain accuracy in orders, shipments, and product quality, resulting in a 15% increase in overall productivity and improved customer satisfaction</li></ul>",
+			'<ul><li>Developed and trained new hires as an ICQA Ambassador, contributing to a 25% reduction in onboarding time and ensuring consistent standards of performance were met across the team</li><li>Conducted thorough inventory Q/A checks throughout the primary fulfillment warehouse in Oklahoma City, verifying virtual and physical inventory with a 99% accuracy rate and identifying and resolving defects promptly</li><li>Analyzed inventory data and resolved discrepancies as an ICQA Problem Solver, utilizing mobile computer units to investigate and maintain accuracy in orders, shipments, and product quality, resulting in a 15% increase in overall productivity and improved customer satisfaction</li></ul>',
 		contract: ContractType.FullTime,
 		type: 'Logistics',
 		location: 'Oklahoma City, OK',
@@ -39,7 +39,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		slug: 'amazon-sort',
 		company: 'Amazon',
 		description:
-			"<ul><li>Sorted an average of 2,500 incoming packages daily from fulfillment centers based on size, shape, and weight,ensuring accurate sorting and preparing shipments for timely delivery to customers</li><li>Coordinated with associates daily, implemented process improvements that increased productivity by 10%, and optimized performance and efficiency in the workplace</li><li>Safely loaded and secured an average of 50 pallets of customer packages onto shipping trucks daily, guaranteeing that all items were properly packaged and transported to their destination with zero reported incidents</li></ul>",
+			'<ul><li>Sorted an average of 2,500 incoming packages daily from fulfillment centers based on size, shape, and weight,ensuring accurate sorting and preparing shipments for timely delivery to customers</li><li>Coordinated with associates daily, implemented process improvements that increased productivity by 10%, and optimized performance and efficiency in the workplace</li><li>Safely loaded and secured an average of 50 pallets of customer packages onto shipping trucks daily, guaranteeing that all items were properly packaged and transported to their destination with zero reported incidents</li></ul>',
 		contract: ContractType.FullTime,
 		type: 'Logistics',
 		location: 'Oklahoma City, OK',
