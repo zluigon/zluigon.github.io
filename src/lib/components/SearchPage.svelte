@@ -4,9 +4,12 @@
 	import Input from './Input/Input.svelte';
 	import { browser } from '$app/environment';
 	import { pushState, replaceState } from '$app/navigation';
+	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	export let title = 'Title';
 	export let search = '';
+	let searchInput: Input;
 
 	const dispatch = createEventDispatcher();
 
@@ -29,9 +32,14 @@
 			const state = window.history.state;
 
 			window.history.replaceState(state, '', url);
+
+			if ($page.url.pathname.startsWith(`${base}/search`)) {
+				if (searchInput) {
+					searchInput.focus();
+				}
+			}
 		}
 	}
-
 	onMount(() => {
 		let searchParams = new URLSearchParams(window.location.search);
 
@@ -42,7 +50,7 @@
 
 <CommonPage {title}>
 	<div class="w-100% row">
-		<Input bind:value={search} placeholder={'Search...'} />
+		<Input bind:this={searchInput} bind:value={search} placeholder={'Search...'} />
 	</div>
 	<div class="w-100% col flex-1">
 		<slot />

@@ -10,6 +10,8 @@ export enum Platform {
 	Download = 'download'
 }
 
+export type Icon = `i-${string}-${string}`;
+
 export enum ContractType {
 	FullTime = 'Full-time',
 	PartTime = 'Part-time',
