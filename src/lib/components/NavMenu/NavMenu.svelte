@@ -116,65 +116,12 @@
 			>
 				{#if $theme}
 					<UIcon icon="i-carbon-sun" />
+					<span>Light Mode</span>
 				{:else}
 					<UIcon icon="i-carbon-moon" />
+					<span>Dark Mode</span>
 				{/if}
 			</button>
 		</div>
 	</div>
 </div>
-
-<style lang="scss">
-	.nav-menu {
-		display: flex;
-		justify-content: center;
-		position: sticky;
-		top: 0px;
-		z-index: 10;
-		padding: 0px 10px;
-		border-bottom: 1px solid var(--secondary);
-		background-color: var(--main);
-
-		&-item {
-			text-decoration: none;
-			font-weight: 400;
-			padding: 10px 20px;
-			color: inherit;
-			display: flex;
-			align-items: center;
-			border-bottom: 3px solid transparent;
-
-			&-label {
-				margin-left: 10px;
-
-				@media (max-width: 950px) {
-					& {
-						display: none;
-					}
-				}
-			}
-
-			&:hover {
-				background-color: var(--main-hover);
-			}
-		}
-	}
-	.nav-menu-mobile {
-		z-index: -1;
-		max-height: calc(100vh - 50px - 1px);
-		min-height: calc(100vh - 50px - 1px);
-		width: 100%;
-		position: absolute;
-		background-color: var(--main);
-		top: 51px;
-		transform: translateY(-100vh);
-		transition-property: transform opacity;
-		transition: 400ms ease;
-		opacity: 0;
-
-		&-open {
-			opacity: 1;
-			transform: translateY(0vh);
-		}
-	}
-</style>
