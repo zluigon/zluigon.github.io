@@ -162,7 +162,7 @@ body {
 	--code-class-name: var(--secondary-text);
 
 	// font-family: 'Space Mono', monospace;
-	font-size: 14px;
+	font-size: 16px;
 
 	color: var(--tertiary-text);
 	overflow-y: auto !important;
@@ -360,5 +360,15 @@ body {
 		&::after {
 			transform: translateY(0) rotate(-45deg);
 		}
+	}
+}
+
+.screenshot {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	transition: background-size 200ms;
+	&:hover {
+		background-size: 120%;
 	}
 }

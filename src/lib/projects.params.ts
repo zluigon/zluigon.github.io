@@ -1,4 +1,4 @@
-import Assets from './data/assets';
+import Assets, { Screenshots } from './data/assets';
 import { getSkills } from './skills.params';
 import type { Project } from './types';
 
@@ -22,7 +22,7 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'html', 'css', 'jquery', 'bootstrap'),
 		type: 'Web Application',
-		screenshots: []
+		screenshots: [{label: '', src: Screenshots.WeatherMap1}]
 	},
 	{
 		slug: 'pawspursuit',

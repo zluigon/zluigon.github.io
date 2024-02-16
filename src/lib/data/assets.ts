@@ -6,9 +6,15 @@ const gh = (file: string) => `${base}/logos/${file}`;
 
 const cv = (file: string) => `${base}/resume/${file}`;
 
+const sh = (file: string) => `${base}/screenshots/${file}`;
+
 export const CV = {
 	CV: cv('Luis_Gonzalez_Resume.pdf')
 };
+
+export const Screenshots = {
+	WeatherMap1: sh('weather-map.png'),
+}
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
