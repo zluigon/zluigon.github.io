@@ -12,7 +12,8 @@ export const MY_EDUCATION: Array<Education> = [
 		period: { from: new Date(2023, 0, 17), to: new Date(2023, 5, 16) },
 		shortDescription: '',
 		slug: 'codeup',
-		subjects: []
+		subjects: [],
+		color: '#adff2f'
 	}
 ];
 

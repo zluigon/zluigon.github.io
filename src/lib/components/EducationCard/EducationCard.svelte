@@ -18,7 +18,7 @@
 	const period = `${from} - ${to}`;
 </script>
 
-<Card>
+<Card color={education.color}>
 	<div class="flex-1 col gap-2 items-stretch">
 		<img
 			src={getAssetURL(education.logo)}

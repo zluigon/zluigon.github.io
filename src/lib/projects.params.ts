@@ -22,7 +22,7 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('js', 'html', 'css', 'jquery', 'bootstrap'),
 		type: 'Web Application',
-		screenshots: [{label: '', src: Screenshots.WeatherMap1}]
+		screenshots: [{ label: '', src: Screenshots.WeatherMap1 }]
 	},
 	{
 		slug: 'pawspursuit',

@@ -14,7 +14,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		period: { from: new Date(2022, 0), to: new Date(2023, 0) },
 		skills: getSkills(),
 		name: 'Warehouse Associate',
-		color: '#ffffff',
+		color: '#000000',
 		links: [{ to: 'https://www.rymaxinc.com/', label: 'Rymax Inc.', type: 'link' }],
 		logo: Assets.Rymax,
 		shortDescription: ''
@@ -30,7 +30,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		period: { from: new Date(2019, 8), to: new Date(2021, 11) },
 		skills: getSkills(),
 		name: 'Inventory Control Quality Assurance Associate',
-		color: '#ffffff',
+		color: '#FF9900',
 		links: [],
 		logo: Assets.Amazon,
 		shortDescription: ''
@@ -46,7 +46,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		period: { from: new Date(2018, 4), to: new Date(2019, 8) },
 		skills: getSkills(),
 		name: 'Sortation Associate',
-		color: '#ffffff',
+		color: '#FF9900',
 		links: [],
 		logo: Assets.Amazon,
 		shortDescription: ''
@@ -62,7 +62,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		period: { from: new Date(2011, 5), to: new Date(2015, 8) },
 		skills: getSkills(),
 		name: 'Security Forces',
-		color: '#ffffff',
+		color: '#0437F2',
 		links: [],
 		logo: Assets.USAF,
 		shortDescription: ''

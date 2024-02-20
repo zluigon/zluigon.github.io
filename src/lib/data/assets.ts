@@ -13,8 +13,8 @@ export const CV = {
 };
 
 export const Screenshots = {
-	WeatherMap1: sh('weather-map.png'),
-}
+	WeatherMap1: sh('weather-map.png')
+};
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
