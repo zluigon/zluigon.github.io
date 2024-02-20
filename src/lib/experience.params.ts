@@ -14,7 +14,7 @@ const MY_EXPERIENCE: Array<Experience> = [
 		period: { from: new Date(2022, 0), to: new Date(2023, 0) },
 		skills: getSkills(),
 		name: 'Warehouse Associate',
-		color: '#000000',
+		color: '#717378',
 		links: [{ to: 'https://www.rymaxinc.com/', label: 'Rymax Inc.', type: 'link' }],
 		logo: Assets.Rymax,
 		shortDescription: ''
