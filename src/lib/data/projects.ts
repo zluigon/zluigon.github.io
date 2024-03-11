@@ -1,8 +1,8 @@
-import Assets, { Screenshots } from './data/assets';
-import { getSkills } from './skills.params';
-import type { Project } from './types';
+import Assets, { Screenshots } from './assets';
+import { getSkills } from './skills';
+import type { Project } from '../types';
 
-const MY_PROJECTS: Array<Project> = [
+export const items: Array<Project> = [
 	{
 		slug: 'weather-map',
 		color: '#adff2f',
@@ -60,4 +60,4 @@ const MY_PROJECTS: Array<Project> = [
 	}
 ];
 
-export default MY_PROJECTS;
+export const title = 'Projects';

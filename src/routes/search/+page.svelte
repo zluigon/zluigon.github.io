@@ -1,20 +1,19 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
-	import { SEARCH } from '$lib/params';
+	import { title } from '@data/search';
 	import SearchPage from '$lib/components/SearchPage.svelte';
-	import MY_EXPERIENCE from '$lib/experience.params';
-	import MY_PROJECTS from '$lib/projects.params';
-	import MY_SKILLS from '$lib/skills.params';
+	import * as experience from '@data/experience';
+	import * as projects from '@data/projects';
+	import * as skills from '@data/skills';
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
-
-	const { title } = SEARCH;
+	import type { Icon, Item, Skill } from '$lib/types';
 
 	type Item<T = unknown> = {
-		icon: string;
+		icon: Icon;
 		name: string;
-		data: T;
+		data: Item | Skill;
 		to: string;
 	};
 
@@ -34,38 +33,40 @@
 
 		// filter
 		result.push(
-			...MY_PROJECTS.filter((item) => query && item.name.toLowerCase().includes(query)).map<Item>(
-				(data) => ({
+			...projects.items
+				.filter((item) => query && item.name.toLowerCase().includes(query))
+				.map<Item>((data) => ({
 					data,
 					icon: 'i-carbon-cube',
 					name: data.name,
 					to: `projects/${data.slug}`
-				})
-			)
+				}))
 		);
 
 		result.push(
-			...MY_SKILLS.filter((item) => query && item.name.toLowerCase().includes(query)).map<Item>(
-				(data) => ({
+			...skills.items
+				.filter((item) => query && item.name.toLowerCase().includes(query))
+				.map<Item>((data) => ({
 					data,
 					icon: 'i-carbon-software-resource-cluster',
 					name: data.name,
 					to: `skills/${data.slug}`
-				})
-			)
+				}))
 		);
 
 		result.push(
-			...MY_EXPERIENCE.filter(
-				(item) =>
-					query &&
-					(item.name.toLowerCase().includes(query) || item.company.toLowerCase().includes(query))
-			).map<Item>((data) => ({
-				data,
-				icon: 'i-carbon-development',
-				name: `${data.name} @ ${data.company}`,
-				to: `experience/${data.slug}`
-			}))
+			...experience.items
+				.filter(
+					(item) =>
+						query &&
+						(item.name.toLowerCase().includes(query) || item.company.toLowerCase().includes(query))
+				)
+				.map<Item>((data) => ({
+					data,
+					icon: 'i-carbon-development',
+					name: `${data.name} @ ${data.company}`,
+					to: `experience/${data.slug}`
+				}))
 		);
 	}
 </script>

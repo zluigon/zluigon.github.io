@@ -23,8 +23,8 @@ export enum ContractType {
 
 export type Asset = string | { light: string; dark: string };
 
-export interface Item {
-	slug: string;
+export interface Item<S extends string = string> {
+	slug: S;
 	name: string;
 	logo: Asset;
 	shortDescription: string;
@@ -43,11 +43,11 @@ export interface IconLink extends Link {
 	icon: Asset;
 }
 
-export interface Skill extends Omit<Item, 'shortDescription'> {
+export interface Skill<S extends string = string> extends Omit<Item<S>, 'shortDescription'> {
 	color: string;
 }
 
-export interface Project extends Item {
+export interface Project<S extends string = string> extends Item<S> {
 	links: Array<Link>;
 	color: string;
 	period: {
@@ -55,16 +55,16 @@ export interface Project extends Item {
 		to?: Date;
 	};
 	type: string;
-	skills: Array<Skill>;
+	skills: Array<Skill<S>>;
 }
 
-export interface Experience extends Project {
+export interface Experience<S extends string = string> extends Project<S> {
 	company: string;
 	location: string;
 	contract: ContractType;
 }
 
-export interface Education extends Item {
+export interface Education<S extends string = string> extends Item<S> {
 	organization: string;
 	location: string;
 	period: {
@@ -85,7 +85,7 @@ export interface PageWithSearchParams<T> extends PageParams {
 }
 
 export interface HomeLink {
-	platform: Platform;
+	platform: string;
 	link: string;
 }
 

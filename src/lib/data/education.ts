@@ -1,7 +1,7 @@
-import Assets from './data/assets';
-import type { Education } from './types';
+import Assets from './assets';
+import type { Education } from '../types';
 
-export const MY_EDUCATION: Array<Education> = [
+export const items: Array<Education> = [
 	{
 		name: 'Codeup',
 		degree: 'Certificate of Completion',
@@ -17,4 +17,4 @@ export const MY_EDUCATION: Array<Education> = [
 	}
 ];
 
-export default MY_EDUCATION;
+export const title = 'Education';

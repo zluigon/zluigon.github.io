@@ -1,15 +1,13 @@
 <script>
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
-	import { RESUME } from '$lib/params';
-
-	const { item, title } = RESUME;
+	import { data, title } from '@data/resume';
 </script>
 
 <CommonPage {title}>
 	<div class="resume">
-		{#if item}
-			<a href={item}>
+		{#if data}
+			<a href={data} download>
 				<Chip size={'1.25em'}>Download</Chip>
 			</a>
 		{:else}

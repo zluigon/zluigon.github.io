@@ -5,7 +5,7 @@
 	import { base } from '$app/paths';
 	import type { Project } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
-	import { PROJECTS } from '$lib/params';
+	import { title } from '@data/projects';
 	import Markdown from '$lib/components/Markdown.svelte';
 	import TabTitle from '$lib/components/TabTitle.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
@@ -15,8 +15,6 @@
 	import Screenshot from '$lib/components/Screenshots/Screenshot.svelte';
 
 	export let data: { project?: Project };
-
-	const { title } = PROJECTS;
 
 	const screenshots = data.project?.screenshots ?? [];
 

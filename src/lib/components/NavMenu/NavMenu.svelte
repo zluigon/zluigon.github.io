@@ -1,14 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { HOME, NavBar } from '$lib/params';
 	import { theme, toggleTheme } from '$lib/stores/theme';
-
+	import { items } from '@data/navbar';
+	import * as HOME from '@data/home';
+	import Icon from '@iconify/svelte';
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 
-	let currentRoute = '/';
+	$: currentRoute = $page.url.pathname;
 
 	let expanded = false;
+
 	const toggleExpanded = (v?: boolean) => {
 		if (typeof v === 'undefined') {
 			expanded = !expanded;
@@ -16,42 +18,28 @@
 			expanded = v;
 		}
 	};
-
-	$: {
-		if ($page) {
-			currentRoute = $page.url.pathname;
-		}
-	}
-
-	const items = [
-		{ title: NavBar.skills, to: '/skills', icon: 'i-carbon-software-resource-cluster' },
-		{ title: NavBar.personal, to: '/projects', icon: 'i-carbon-cube' },
-		{ title: NavBar.career, to: '/experience', icon: 'i-carbon-development' },
-		{ title: NavBar.Education, to: '/education', icon: 'i-carbon-education' }
-		// { title: NavBar.resume, to: '/resume', icon: 'i-carbon-result' }
-	] as const;
 </script>
 
 <div class="nav-menu">
 	<nav class="container flex flex-row items-center text-sm">
 		<a
 			href={`${base}/`}
-			class="nav-menu-left decoration-none w-auto md:w-150px lg:w-auto row flex flex-row items-center px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
+			class="nav-menu-left decoration-none w-auto md:w-150px lg:w-auto row flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
-			<UIcon icon="i-carbon-code" classes="text-2em" />
+			<Icon icon="carbon:code" width="2em" height="2em" />
 			<span
 				class="ml-2 text-md font-bold hidden md:inline overflow-hidden whitespace-nowrap text-ellipsis"
-				>{HOME.firstName} {HOME.lastName}</span
-			>
+				>{HOME.firstName} {HOME.lastName}
+			</span>
 		</a>
-		<div class="flex-1 block overflow-hidden md:hidden whitespace-nowrap text-ellipsis text-center">
+		<div class="flex-1 block overflow-hidden sm:hidden whitespace-nowrap text-ellipsis text-center">
 			{HOME.firstName}
 			{HOME.lastName}
 		</div>
 		<div class="flex-row flex-1 self-center h-full justify-center hidden md:flex">
 			{#each items as item}
 				<a href={`${base}${item.to}`} class="nav-menu-item !text-[var(--secondary-text)]">
-					<UIcon icon={item.icon} classes="text-1.3em" />
+					<Icon icon={item.icon} width="1.2em" height="1.2em" />
 					<span class="nav-menu-item-label">{item.title}</span>
 				</a>
 			{/each}
@@ -64,16 +52,16 @@
 					href={`${base}/search`}
 					class="text-inherit col-center self-stretch px-2 hover:bg-[color:var(--main-hover)]"
 				>
-					<UIcon icon="i-carbon-search" />
+					<Icon icon="carbon:search" width="1.2em" height="1.2em" />
 				</a>
 				<button
 					class="bg-transparent text-1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
 					on:click={() => toggleTheme()}
 				>
 					{#if $theme}
-						<UIcon icon="i-carbon-sun" />
+						<Icon icon="carbon:moon" width="1.2em" height="1.2em" />
 					{:else}
-						<UIcon icon="i-carbon-moon" />
+						<Icon icon="carbon:sun" width="1.2em" height="1.2em" />
 					{/if}
 				</button>
 			</div>
@@ -96,7 +84,7 @@
 					class="nav-menu-item !text-[var(--secondary-text)] gap-5"
 					on:click={() => toggleExpanded(false)}
 				>
-					<UIcon icon={item.icon} classes="text-1.3em" />
+					<Icon icon={item.icon} width="1.2em" height="1.2em" />
 					<span class="">{item.title}</span>
 				</a>
 			{/each}
@@ -107,7 +95,7 @@
 				class="text-inherit decoration-none px-6 py-3 gap-2 row hover:bg-[color:var(--main-hover)]"
 				on:click={() => toggleExpanded(false)}
 			>
-				<UIcon icon="i-carbon-search" />
+				<Icon icon="carbon:search" width="1.2em" height="1.2em" />
 				<span>Search</span>
 			</a>
 			<button
@@ -115,11 +103,11 @@
 				on:click={() => toggleTheme()}
 			>
 				{#if $theme}
-					<UIcon icon="i-carbon-sun" />
-					<span>Light Mode</span>
+					<Icon icon="carbon:moon" width="1.2em" height="1.2em" />
+					<span>Dark Theme</span>
 				{:else}
-					<UIcon icon="i-carbon-moon" />
-					<span>Dark Mode</span>
+					<Icon icon="carbon:sun" width="1.2em" height="1.2em" />
+					<span>Light Theme</span>
 				{/if}
 			</button>
 		</div>

@@ -5,7 +5,7 @@
 	import { base } from '$app/paths';
 	import type { Experience } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
-	import { EXPERIENCE } from '$lib/params';
+	import { title } from '@data/experience';
 	import Markdown from '$lib/components/Markdown.svelte';
 	import TabTitle from '$lib/components/TabTitle.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
@@ -15,8 +15,6 @@
 	import { getTimeDiff } from '$lib/utils';
 
 	export let data: { experience?: Experience };
-
-	const { title } = EXPERIENCE;
 
 	$: computedTitle = data.experience ? `${data.experience.name} - ${title}` : title;
 </script>

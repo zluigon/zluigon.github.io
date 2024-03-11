@@ -1,13 +1,14 @@
 <script lang="ts">
-	import { HOME, TITLE_SUFFIX, getPlatformIcon } from '$lib/params';
-	import MY_SKILLS from '$lib/skills.params';
+	import { title, firstName, lastName, description, links, skills } from '@data/home';
+	import { items as skillsItems } from '@data/skills';
+	import { titleSuffix } from '@data/app';
 	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';
 	import Carrousel from '$lib/components/Carrousel/Carrousel.svelte';
-	import Icon from '$lib/components/Icon/Icon.svelte';
+	// import Icon from '$lib/components/Icon/Icon.svelte';
+	import Icon from '@iconify/svelte';
 	import Title from '$lib/components/Title/Title.svelte';
-
-	const { description, firstName, lastName, title, links, skills } = HOME;
+	import { getPlatformIcon } from '$lib/utils';
 
 	const isEmail = (email: string): boolean => {
 		const regex =
@@ -18,7 +19,7 @@
 </script>
 
 <svelte:head>
-	<title>{useTitle(title, TITLE_SUFFIX)}</title>
+	<title>{useTitle(title, titleSuffix)}</title>
 </svelte:head>
 
 <div
@@ -39,12 +40,13 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					<Icon icon={getPlatformIcon(link.platform)} color={'var(--accent-text'} size={'24px'}
-					></Icon>
+				<Icon icon = {link.platform} width='36' height='36' style='color:{'var(--accent-text'}' />
+					<!-- <Icon icon={getPlatformIcon(link.platform)} color={'var(--accent-text'} size={'24px'}
+					></Icon> -->
 				</a>
 			{/each}
 		</div>
 	</div>
 
-	<Carrousel items={skills ?? MY_SKILLS} />
+	<Carrousel items={skills ?? skillsItems} />
 </div>

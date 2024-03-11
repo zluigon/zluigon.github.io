@@ -1,3 +1,5 @@
+import { Platform } from '$lib/types';
+
 export enum EmploymentType {
 	FullTime = 'Full-time',
 	PartTime = 'Part-time',
@@ -50,5 +52,28 @@ export enum Icons {
 
 	Download = 'M24,24H0v-8h2v6h20v-6h2V24z M12,18.4l-7.7-7.7l1.4-1.4l5.3,5.3V0h2v14.6l5.3-5.3l1.4,1.4L12,18.4z'
 }
+
+export const getPlatformIcon = (platform: Platform): Icons => {
+	switch (platform) {
+		case Platform.GitHub:
+			return Icons.GitHub;
+		case Platform.StackOverflow:
+			return Icons.StackOverflow;
+		case Platform.Twitter:
+			return Icons.Twitter;
+		case Platform.Linkedin:
+			return Icons.LinkedIn;
+		case Platform.Email:
+			return Icons.Email;
+		case Platform.Facebook:
+			return Icons.Facebook;
+		case Platform.Youtube:
+			return Icons.Youtube;
+		case Platform.Resume:
+			return Icons.Resume;
+		case Platform.Download:
+			return Icons.Download;
+	}
+};
 
 export * from './helpers';

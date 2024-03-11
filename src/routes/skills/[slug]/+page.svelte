@@ -2,13 +2,12 @@
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import MainTitle from '$lib/components/Title/Title.svelte';
-	import MY_EXPERIENCE from '$lib/experience.params';
-	import MY_PROJECTS from '$lib/projects.params';
-
+	import { title } from '@data/skills';
+	import * as projects from '@data/projects';
+	import * as experiences from '@data/experience';
 	import { base } from '$app/paths';
 	import type { Skill } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
-	import { SKILLS } from '$lib/params';
 	import Markdown from '$lib/components/Markdown.svelte';
 	import TabTitle from '$lib/components/TabTitle.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
@@ -25,8 +24,6 @@
 
 	export let data: { skill?: Skill };
 
-	const { title } = SKILLS;
-
 	const getRelatedProjects = (): Array<Related> => {
 		const out: Array<Related> = [];
 
@@ -36,7 +33,7 @@
 			return [];
 		}
 
-		MY_PROJECTS.forEach((item) => {
+		projects.items.forEach((item) => {
 			if (item.skills.some((tech) => tech.slug === skill.slug)) {
 				out.push({
 					img: getAssetURL(item.logo),
@@ -47,7 +44,8 @@
 				});
 			}
 		});
-		MY_EXPERIENCE.forEach((item) => {
+
+		experiences.items.forEach((item) => {
 			if (item.skills.some((tech) => tech.slug === skill.slug)) {
 				out.push({
 					img: getAssetURL(item.logo),

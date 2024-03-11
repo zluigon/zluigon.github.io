@@ -2,11 +2,9 @@
 	import ExperienceCard from '$lib/components/ExperienceCard/ExperienceCard.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
-	import { EXPERIENCE } from '$lib/params';
+	import { title, items } from '@data/experience';
 	import type { Experience } from '$lib/types';
 	import { isBlank } from '@riadh-adrani/utils';
-
-	const { items, title } = EXPERIENCE;
 
 	let result: Array<Experience> = [...items];
 

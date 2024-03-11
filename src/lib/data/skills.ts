@@ -1,9 +1,10 @@
-import Assets from './data/assets';
-import type { Skill } from './types';
+import Assets from './assets';
+import type { Skill } from '../types';
+import type { StringWithAutoComplete } from '@riadh-adrani/utils';
 
-const s = (skill: Skill) => skill;
+const s = <S extends string>(skill: Skill<S>) => skill;
 
-const MY_SKILLS = [
+export const items = [
 	s({
 		slug: 'js',
 		name: 'JavaScript',
@@ -134,7 +135,8 @@ const MY_SKILLS = [
 	})
 ];
 
-export default MY_SKILLS;
+export const title = 'Skills';
 
-export const getSkills = (...slugs: Array<string>): Array<Skill> =>
-	MY_SKILLS.filter((skill) => slugs.includes(skill.slug));
+export const getSkills = (
+	...slugs: Array<StringWithAutoComplete<(typeof items)[number]['slug']>>
+): Array<Skill> => items.filter((it) => slugs.includes(it.slug));

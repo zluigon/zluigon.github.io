@@ -1,8 +1,8 @@
-import Assets from './data/assets';
-import { getSkills } from './skills.params';
-import { ContractType, type Experience } from './types';
+import Assets from './assets';
+import { getSkills } from './skills';
+import { ContractType, type Experience } from '../types';
 
-const MY_EXPERIENCE: Array<Experience> = [
+export const items: Array<Experience> = [
 	{
 		slug: 'rymax',
 		company: 'Rymax Inc.',
@@ -69,4 +69,4 @@ const MY_EXPERIENCE: Array<Experience> = [
 	}
 ];
 
-export default MY_EXPERIENCE;
+export const title = 'Experience';

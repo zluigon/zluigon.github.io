@@ -6,11 +6,9 @@
 	import { getAssetURL } from '$lib/data/assets';
 	import EducationCard from '$lib/components/EducationCard/EducationCard.svelte';
 
-	import { EDUCATION } from '$lib/params';
+	import { title, items } from '@data/education';
 	import type { Education } from '$lib/types';
 	import { getTimeDiff, getMonthName } from '$lib/utils';
-
-	const { items, title } = EDUCATION;
 
 	let search = '';
 
