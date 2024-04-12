@@ -36,7 +36,7 @@
 			{#each links as link}
 				<a
 					class="decoration-none"
-					href={`${isEmail(link.link) ? 'mailto:' : ''} ${link.link}`}
+					href={`${isEmail(link.link) ? 'mailto:' : ''}${link.link}`}
 					target="_blank"
 					rel="noreferrer"
 				>
