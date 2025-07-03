@@ -9,6 +9,7 @@
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 	import Chip from '../Chip/Chip.svelte';
+	import CardDivider from '../Card/CardDivider.svelte';
 
 	export let experience: Experience;
 
@@ -53,9 +54,15 @@
 					{/each}
 				</div>
 			</div>
-			<div class="text-[var(--text)] text-[0.9em] font-200">{period}</div>
-			<div class="experience-description">{experience.shortDescription}</div>
-			<div class="flex flex-row flex-wrap mt-5">
+			<div class="text-[var(--text)] text-[0.9em] font-200 col">
+				<div class="row items-center gap-2">
+					{period}
+				</div>
+				<CardDivider />
+				<div class="experience-description">{experience.shortDescription}</div>
+			</div>
+
+			<div class="flex flex-row flex-wrap m-t-3">
 				{#each experience.skills as skill}
 					<ChipIcon
 						logo={getAssetURL(skill.logo)}
