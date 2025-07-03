@@ -12,12 +12,12 @@ export const items: Array<Experience> = [
 		type: 'Logistics',
 		location: 'Pine Brook, NJ',
 		period: { from: new Date(2022, 0), to: new Date(2023, 0) },
-		skills: getSkills(),
+		skills: getSkills('js', 'ts', 'react', 'nodejs', 'firebase', 'tailwind', 'docker', 'aws'),
 		name: 'Warehouse Associate',
 		color: '#717378',
 		links: [{ to: 'https://www.rymaxinc.com/', label: 'Rymax Inc.', type: 'link' }],
 		logo: OrganizationLogos.Rymax,
-		shortDescription: ''
+		shortDescription: 'Led warehouse operations, improving productivity and efficiency.'
 	},
 	{
 		slug: 'amazon-icqa',
