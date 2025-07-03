@@ -1,4 +1,4 @@
-import { Platform, type HomeLink } from '$lib/types';
+import { type HomeLink } from '$lib/types';
 import { getSkills } from './skills';
 
 export const title = 'Home';

@@ -18,7 +18,8 @@ export enum ContractType {
 	SelfEmployed = 'Self-employed',
 	Freelance = 'Freelance',
 	Contract = 'Contract',
-	Internship = 'Internship'
+	Internship = 'Internship',
+	Apprenticeship = 'Apprenticeship'
 }
 
 export type Asset = string | { light: string; dark: string };
@@ -45,6 +46,12 @@ export interface IconLink extends Link {
 
 export interface Skill<S extends string = string> extends Omit<Item<S>, 'shortDescription'> {
 	color: string;
+	category?: SkillCategory<S>;
+}
+
+export interface SkillCategory<S extends string = string> {
+	slug: S;
+	name: string;
 }
 
 export interface Project<S extends string = string> extends Item<S> {

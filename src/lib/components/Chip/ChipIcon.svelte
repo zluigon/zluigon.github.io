@@ -1,12 +1,20 @@
 <script lang="ts">
+	import Icon from '@iconify/svelte';
 	import { theme } from '$lib/stores/theme';
+	import { hasIcon, getIconName } from '$lib/utils/iconify';
 
 	export let name = '';
-	export let logo = '';
+	export let logo = ''; // Keep for backward compatibility
 	export let inverted = false;
 	export let grayscale = true;
 
 	export let href: string | undefined = undefined;
+
+	// Check if we have an Iconify icon for this technology
+	$: hasIconifyIcon = hasIcon(name);
+
+	// Get the icon name for Iconify
+	$: iconName = hasIconifyIcon ? getIconName(name) : '';
 </script>
 
 <svelte:element
@@ -19,7 +27,11 @@
 >
 	{#if $$slots.default}
 		<slot />
+	{:else if hasIconifyIcon}
+		<!-- Use Iconify icon -->
+		<Icon icon={iconName} width="24" height="24" class={inverted ? 'invert-100' : ''} />
 	{:else}
+		<!-- Fallback to existing logo system -->
 		<img
 			class={`w-24px h-24px ${inverted ? 'invert-100' : ''}`}
 			class:chip-icon-logo-inverted={$theme && inverted}
