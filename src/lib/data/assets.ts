@@ -19,44 +19,69 @@ export const Screenshots = {
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
 
-const Assets = {
-	AWS: a('aws.svg'),
-	Bootstrap: a('bootstrap.svg'),
+// Skill/Technology Logos
+export const SkillLogos = {
+	// Programming Languages
+	JavaScript: a('js.png'),
+	TypeScript: a('ts.png'),
+	Java: a('java.png'),
+	Python: a('python.png'),
 	C: a('c.svg'),
+
+	// Frontend Technologies
+	Svelte: a('svelte.png'),
+	ReactJs: a('react.svg'),
+	HTML: a('html.svg'),
+	CSS: a('css.svg'),
+	Tailwind: a('tailwind.svg'),
+	Sass: a('sass.png'),
+
+	// Backend Technologies
+	Spring: a('spring.svg'),
+	NodeJs: a('node.png'),
+	Firebase: a('firebase.png'),
+
+	// DevOps & Infrastructure
+	Docker: a('docker.svg'),
+	AWS: a('aws.svg'),
+	Terraform: a('terraform.svg'),
+	MySQL: a('mysql.svg'),
+
+	// Design Tools
+	Photoshop: a('photoshop.svg'),
+	Illustrator: a('illustrator.svg'),
+	AfterEffects: a('after-effects.svg'),
+	Premiere: a('premiere.svg'),
+
+	// Development Tools
+	Git: a('git.svg'),
+
+	// Legacy/Unused (keeping for reference)
+	Bootstrap: a('bootstrap.svg'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
 	Rust: a('rust.svg'),
-	Docker: a('docker.svg'),
 	Kubernetes: a('kubernetees.svg'),
-	TypeScript: a('ts.png'),
-	ReactJs: a('react.svg'),
-	Python: a('python.png'),
-	NodeJs: a('node.png'),
-	Svelte: a('svelte.png'),
-	JavaScript: a('js.png'),
-	Java: a('java.png'),
-	Firebase: a('firebase.png'),
-	Sass: a('sass.png'),
 	Unknown: a('no-img.svg'),
-	Tailwind: a('tailwind.svg'),
-	HTML: a('html.svg'),
-	Premiere: a('premiere.svg'),
-	Photoshop: a('photoshop.svg'),
-	CSS: a('css.svg'),
-	AfterEffects: a('after-effects.svg'),
-	Illustrator: a('illustrator.svg'),
 	Unocss: a('unocss.svg'),
-	Codeup: a('codeup.png'),
-	MySQL: a('mysql.svg'),
-	Spring: a('spring.svg'),
-	Git: a('git.svg'),
 	Thymeleaf: a('thymeleaf.svg'),
 	jQuery: a('jquery.svg'),
 	SpringBoot: a('springboot.svg'),
-	Rymax: a('rymax.png'),
+	SpringSecurity: a('springsecurity.svg')
+};
+
+// Organization/Employer Logos
+export const OrganizationLogos = {
 	Amazon: a('amazon.svg'),
 	USAF: a('US_AF.svg'),
-	SpringSecurity: a('springsecurity.svg')
+	Rymax: a('rymax.png'),
+	Codeup: a('codeup.png')
+};
+
+// Legacy export for backward compatibility
+const Assets = {
+	...SkillLogos,
+	...OrganizationLogos
 };
 
 export default Assets;

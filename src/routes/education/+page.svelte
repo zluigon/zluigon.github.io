@@ -2,7 +2,7 @@
 	import Card from '$lib/components/Card/Card.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
-	import SearchPage from '$lib/components/SearchPage.svelte';
+	import CommonPage from '$lib/components/CommonPage.svelte';
 	import { getAssetURL } from '$lib/data/assets';
 	import EducationCard from '$lib/components/EducationCard/EducationCard.svelte';
 
@@ -10,27 +10,10 @@
 	import type { Education } from '$lib/types';
 	import { getTimeDiff, getMonthName } from '$lib/utils';
 
-	let search = '';
-
 	let result: Array<Education> = items;
-
-	const onSearch = (ev: CustomEvent<{ search: string }>) => {
-		const s = ev.detail.search;
-
-		result = items.filter((it) => {
-			return (
-				it.degree.toLowerCase().includes(s) ||
-				it.description.toLowerCase().includes(s) ||
-				it.location.toLowerCase().includes(s) ||
-				it.name.toLowerCase().includes(s) ||
-				it.organization.toLowerCase().includes(s) ||
-				it.subjects.some((it) => it.toLowerCase().includes(s))
-			);
-		});
-	};
 </script>
 
-<SearchPage {title} {search} on:search={onSearch}>
+<CommonPage {title}>
 	<div class="col items-center relative mt-10 flex-1">
 		{#if result.length === 0}
 			<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
@@ -59,4 +42,4 @@
 			{/each}
 		{/if}
 	</div>
-</SearchPage>
+</CommonPage>

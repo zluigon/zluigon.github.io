@@ -40,7 +40,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-				<Icon icon = {link.platform} width='36' height='36' style='color:{'var(--accent-text'}' />
+					<Icon icon={link.platform} width="36" height="36" style="color:{'var(--accent-text'}" />
 					<!-- <Icon icon={getPlatformIcon(link.platform)} color={'var(--accent-text'} size={'24px'}
 					></Icon> -->
 				</a>

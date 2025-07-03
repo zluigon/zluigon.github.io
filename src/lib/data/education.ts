@@ -1,4 +1,4 @@
-import Assets from './assets';
+import { OrganizationLogos } from './assets';
 import type { Education } from '../types';
 
 export const items: Array<Education> = [
@@ -7,7 +7,7 @@ export const items: Array<Education> = [
 		degree: 'Certificate of Completion',
 		description: '',
 		location: 'San Antonio, TX',
-		logo: Assets.Codeup,
+		logo: OrganizationLogos.Codeup,
 		organization: 'Codeup',
 		period: { from: new Date(2023, 0, 17), to: new Date(2023, 5, 16) },
 		shortDescription: '',
