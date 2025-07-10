@@ -5,12 +5,10 @@ import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
 
 const categories = [
-	defineSkillCategory({ name: 'Programming Languages', slug: 'pro-lang' }),
-	defineSkillCategory({ name: 'Frontend Development', slug: 'frontend' }),
-	defineSkillCategory({ name: 'Backend Development', slug: 'backend' }),
-	defineSkillCategory({ name: 'Databases & DevOps', slug: 'db-devops' }),
-	defineSkillCategory({ name: 'Design & Creative', slug: 'design' }),
-	defineSkillCategory({ name: 'Tools & Utilities', slug: 'tools' })
+	defineSkillCategory({ name: 'Programming Languages', slug: 'languages' }),
+	defineSkillCategory({ name: 'Web Development', slug: 'web-dev' }),
+	defineSkillCategory({ name: 'Infrastructure & Tools', slug: 'infrastructure' }),
+	defineSkillCategory({ name: 'Design & Creative', slug: 'design' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -35,7 +33,7 @@ export const items = [
 		logo: SkillLogos.JavaScript,
 		description: 'High-level, multi-paradigm programming language for web development.',
 		color: '#F7DF1E',
-		category: 'pro-lang'
+		category: 'languages'
 	}),
 	defineSkill({
 		slug: 'ts',
@@ -43,7 +41,7 @@ export const items = [
 		logo: SkillLogos.TypeScript,
 		description: 'Typed superset of JavaScript that compiles to plain JavaScript.',
 		color: '#3178C6',
-		category: 'pro-lang'
+		category: 'languages'
 	}),
 	defineSkill({
 		slug: 'java',
@@ -51,7 +49,7 @@ export const items = [
 		logo: SkillLogos.Java,
 		description: 'Object-oriented programming language for enterprise applications.',
 		color: '#ED8B00',
-		category: 'pro-lang'
+		category: 'languages'
 	}),
 	defineSkill({
 		slug: 'python',
@@ -59,7 +57,7 @@ export const items = [
 		logo: SkillLogos.Python,
 		description: 'High-level programming language for general-purpose programming.',
 		color: '#3776AB',
-		category: 'pro-lang'
+		category: 'languages'
 	}),
 	defineSkill({
 		slug: 'c',
@@ -67,17 +65,17 @@ export const items = [
 		logo: SkillLogos.C,
 		description: 'General-purpose programming language.',
 		color: '#A8B9CC',
-		category: 'pro-lang'
+		category: 'languages'
 	}),
 
-	// Frontend Development
+	// Web Development
 	defineSkill({
 		slug: 'svelte',
 		name: 'Svelte',
 		logo: SkillLogos.Svelte,
 		description: 'Front-end compiler for building reactive user interfaces.',
 		color: '#FF3E00',
-		category: 'frontend'
+		category: 'web-dev'
 	}),
 	defineSkill({
 		slug: 'react',
@@ -85,7 +83,7 @@ export const items = [
 		logo: SkillLogos.ReactJs,
 		description: 'JavaScript library for building user interfaces.',
 		color: '#61DAFB',
-		category: 'frontend'
+		category: 'web-dev'
 	}),
 	defineSkill({
 		slug: 'html',
@@ -93,7 +91,7 @@ export const items = [
 		logo: SkillLogos.HTML,
 		description: 'Markup language for structuring web content.',
 		color: '#E34F26',
-		category: 'frontend'
+		category: 'web-dev'
 	}),
 	defineSkill({
 		slug: 'css',
@@ -101,7 +99,7 @@ export const items = [
 		logo: SkillLogos.CSS,
 		description: 'Style sheet language for web presentation.',
 		color: '#1572B6',
-		category: 'frontend'
+		category: 'web-dev'
 	}),
 	defineSkill({
 		slug: 'tailwind',
@@ -109,7 +107,7 @@ export const items = [
 		logo: SkillLogos.Tailwind,
 		description: 'Utility-first CSS framework for custom UI design.',
 		color: '#06B6D4',
-		category: 'frontend'
+		category: 'web-dev'
 	}),
 	defineSkill({
 		slug: 'sass',
@@ -117,17 +115,15 @@ export const items = [
 		logo: SkillLogos.Sass,
 		description: 'CSS preprocessor for enhanced styling capabilities.',
 		color: '#CC6699',
-		category: 'frontend'
+		category: 'web-dev'
 	}),
-
-	// Backend Development
 	defineSkill({
 		slug: 'spring',
 		name: 'Spring',
 		logo: SkillLogos.Spring,
 		description: 'Application framework for Java platform.',
 		color: '#6DB33F',
-		category: 'backend'
+		category: 'web-dev'
 	}),
 	defineSkill({
 		slug: 'nodejs',
@@ -135,33 +131,25 @@ export const items = [
 		logo: SkillLogos.NodeJs,
 		description: 'JavaScript runtime for server-side development.',
 		color: '#339933',
-		category: 'backend'
+		category: 'web-dev'
 	}),
-	defineSkill({
-		slug: 'firebase',
-		name: 'Firebase',
-		logo: SkillLogos.Firebase,
-		description: 'Backend-as-a-Service platform for web and mobile apps.',
-		color: '#FFCA28',
-		category: 'backend'
-	}),
-
-	// Databases & DevOps
 	defineSkill({
 		slug: 'mysql',
 		name: 'MySQL',
 		logo: SkillLogos.MySQL,
 		description: 'Open-source relational database management system.',
 		color: '#4479A1',
-		category: 'db-devops'
+		category: 'web-dev'
 	}),
+
+	// Infrastructure & Tools
 	defineSkill({
 		slug: 'docker',
 		name: 'Docker',
 		logo: SkillLogos.Docker,
 		description: 'Containerization platform for application deployment.',
 		color: '#2496ED',
-		category: 'db-devops'
+		category: 'infrastructure'
 	}),
 	defineSkill({
 		slug: 'aws',
@@ -169,7 +157,7 @@ export const items = [
 		logo: SkillLogos.AWS,
 		description: 'Cloud computing platform for scalable applications.',
 		color: '#FF9900',
-		category: 'db-devops'
+		category: 'infrastructure'
 	}),
 	defineSkill({
 		slug: 'terraform',
@@ -177,52 +165,18 @@ export const items = [
 		logo: SkillLogos.Terraform,
 		description: 'Infrastructure as Code tool for building and managing infrastructure.',
 		color: '#5c4ee5',
-		category: 'db-devops'
+		category: 'infrastructure'
 	}),
-
-	// Design & Creative
-	defineSkill({
-		slug: 'photoshop',
-		name: 'Photoshop',
-		logo: SkillLogos.Photoshop,
-		description: 'Professional image editing and graphic design software.',
-		color: '#31A8FF',
-		category: 'design'
-	}),
-	defineSkill({
-		slug: 'illustrator',
-		name: 'Illustrator',
-		logo: SkillLogos.Illustrator,
-		description: 'Vector graphics editor for digital art and illustrations.',
-		color: '#FF9A00',
-		category: 'design'
-	}),
-	defineSkill({
-		slug: 'after-effects',
-		name: 'After Effects',
-		logo: SkillLogos.AfterEffects,
-		description: 'Motion graphics and visual effects software.',
-		color: '#9999FF',
-		category: 'design'
-	}),
-	defineSkill({
-		slug: 'premiere',
-		name: 'Premiere Pro',
-		logo: SkillLogos.Premiere,
-		description: 'Professional video editing software.',
-		color: '#EA77FF',
-		category: 'design'
-	}),
-
-	// Tools & Utilities
 	defineSkill({
 		slug: 'git',
 		name: 'Git',
 		logo: SkillLogos.Git,
 		description: 'Version control system for software development.',
 		color: '#F05032',
-		category: 'tools'
+		category: 'infrastructure'
 	})
+
+	// Design & Creative (removed - no design skills currently)
 ];
 
 export const title = 'Skills';

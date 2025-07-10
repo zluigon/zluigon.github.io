@@ -67,7 +67,6 @@
 	class={`card text-inherit decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative ${classes.join(
 		' '
 	)}`}
-	style:bgColor={'red'}
 >
 	<div class="card-bg-img flex-1 flex flex-col p-25px rounded-15px">
 		<slot />

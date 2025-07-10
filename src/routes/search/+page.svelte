@@ -10,7 +10,7 @@
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import type { Icon, Item, Skill } from '$lib/types';
 
-	type Item<T = unknown> = {
+	type Item = {
 		icon: Icon;
 		name: string;
 		data: Item | Skill;
@@ -18,14 +18,12 @@
 	};
 
 	let query = '';
-	let mounted = false;
 	let result: Array<Item> = [];
 
 	onMount(() => {
 		let searchParams = new URLSearchParams(window.location.search);
 
 		query = searchParams.get('q') ?? '';
-		mounted = true;
 	});
 
 	$: {

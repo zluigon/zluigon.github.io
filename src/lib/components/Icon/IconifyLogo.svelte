@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { theme } from '$lib/stores/theme';
 	import { getIconName } from '$lib/utils/iconify';
 
 	export let name: string;

@@ -1,13 +1,9 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { theme, toggleTheme } from '$lib/stores/theme';
 	import { items } from '@data/navbar';
 	import * as HOME from '@data/home';
 	import Icon from '@iconify/svelte';
 	import { base } from '$app/paths';
-	import UIcon from '../Icon/UIcon.svelte';
-
-	$: currentRoute = $page.url.pathname;
 
 	let expanded = false;
 
