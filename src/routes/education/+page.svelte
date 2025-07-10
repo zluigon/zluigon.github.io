@@ -1,14 +1,10 @@
 <script lang="ts">
-	import Card from '$lib/components/Card/Card.svelte';
-	import Chip from '$lib/components/Chip/Chip.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
-	import { getAssetURL } from '$lib/data/assets';
 	import EducationCard from '$lib/components/EducationCard/EducationCard.svelte';
 
 	import { title, items } from '@data/education';
 	import type { Education } from '$lib/types';
-	import { getTimeDiff, getMonthName } from '$lib/utils';
 
 	let result: Array<Education> = items;
 </script>

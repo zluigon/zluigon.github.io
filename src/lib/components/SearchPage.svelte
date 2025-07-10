@@ -3,7 +3,6 @@
 	import CommonPage from './CommonPage.svelte';
 	import Input from './Input/Input.svelte';
 	import { browser } from '$app/environment';
-	import { pushState, replaceState } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
 

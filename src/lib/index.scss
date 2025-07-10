@@ -63,6 +63,22 @@ body {
 		right;
 }
 
+/* Prevent transitions during initial load to avoid flash */
+.no-flash * {
+	transition: none !important;
+}
+
+/* Prevent icon flash during theme loading */
+.no-flash svg {
+	opacity: 0 !important;
+}
+
+/* Ensure icons inherit theme colors properly */
+svg {
+	color: inherit;
+	fill: currentColor;
+}
+
 :root[data-theme='dark'] {
 	color-scheme: dark;
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Experience } from '$lib/types';
-	import { getMonthName, getTimeDiff } from '$lib/utils/helpers';
+	import { getMonthName } from '$lib/utils/helpers';
 	import Card from '../Card/Card.svelte';
 	import CardLogo from '../Card/CardLogo.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';

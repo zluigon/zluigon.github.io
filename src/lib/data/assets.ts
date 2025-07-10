@@ -22,7 +22,7 @@ const a = (light: string, dark?: string): Asset =>
 // Skill/Technology Logos
 export const SkillLogos = {
 	// Programming Languages
-	JavaScript: a('js.png'),
+	JavaScript: a('javascript.svg'),
 	TypeScript: a('ts.png'),
 	Java: a('java.png'),
 	Python: a('python.png'),
@@ -39,19 +39,15 @@ export const SkillLogos = {
 	// Backend Technologies
 	Spring: a('spring.svg'),
 	NodeJs: a('node.png'),
-	Firebase: a('firebase.png'),
+	// Firebase: a('firebase.png'), // File not available
 
 	// DevOps & Infrastructure
-	Docker: a('docker.svg'),
+	Docker: a('docker-icon.svg'),
 	AWS: a('aws.svg'),
 	Terraform: a('terraform.svg'),
 	MySQL: a('mysql.svg'),
 
-	// Design Tools
-	Photoshop: a('photoshop.svg'),
-	Illustrator: a('illustrator.svg'),
-	AfterEffects: a('after-effects.svg'),
-	Premiere: a('premiere.svg'),
+	// Design Tools (removed - files not available)
 
 	// Development Tools
 	Git: a('git.svg'),
