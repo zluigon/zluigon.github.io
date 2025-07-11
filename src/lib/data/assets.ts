@@ -88,6 +88,7 @@ export const OrganizationLogos = {
 	USAF: a('organizations/US_AF.svg'),
 	Rymax: a('organizations/rymax.png'),
 	Codeup: a('organizations/codeup.png'),
+	Multiverse: a('organizations/multiverse.svg'),
 	Verizon: a('organizations/verizon.svg'),
 	DepartmentOfTheAirForce: a('organizations/department-of-the-air-force.svg'),
 	Verizon2024: a('organizations/Verizon_2024_(symbol).svg')
