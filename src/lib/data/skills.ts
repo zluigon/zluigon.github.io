@@ -62,6 +62,14 @@ export const items = [
 		category: 'languages'
 	}),
 	defineSkill({
+		slug: 'go',
+		name: 'Go',
+		logo: SkillLogos.Go,
+		description: 'General-purpose programming language.',
+		color: '#00ADD8',
+		category: 'languages'
+	}),
+	defineSkill({
 		slug: 'c',
 		name: 'C',
 		logo: SkillLogos.C,
@@ -120,14 +128,14 @@ export const items = [
 		color: '#06B6D4',
 		category: 'frontend'
 	}),
-	defineSkill({
-		slug: 'sass',
-		name: 'Sass',
-		logo: SkillLogos.Sass,
-		description: 'CSS preprocessor for enhanced styling capabilities.',
-		color: '#CC6699',
-		category: 'frontend'
-	}),
+	// defineSkill({
+	// 	slug: 'sass',
+	// 	name: 'Sass',
+	// 	logo: SkillLogos.Sass,
+	// 	description: 'CSS preprocessor for enhanced styling capabilities.',
+	// 	color: '#CC6699',
+	// 	category: 'frontend'
+	// }),
 
 	// Backend Development
 	defineSkill({
@@ -261,17 +269,25 @@ export const items = [
 		description: 'Version control system for software development.',
 		color: '#F05032',
 		category: 'infrastructure'
-	})
+	}),
+
+	// Skills without categories (not shown on skills page but available for other uses)
+	defineSkill({
+		slug: 'materialui',
+		name: 'Material-UI',
+		logo: SkillLogos.MaterialUI,
+		description: 'React component library implementing Material Design.',
+		color: '#0081CB'
+	}),
 
 	// AI
-	// defineSkill({
-	// 	slug: 'deepseek',
-	// 	name: 'DeepSeek',
-	// 	logo: SkillLogos.DeepSeek,
-	// 	description: 'AI model for natural language processing.',
-	// 	color: '#000000',
-	// 	category: 'others'
-	// })
+	defineSkill({
+		slug: 'deepseek',
+		name: 'DeepSeek',
+		logo: SkillLogos.DeepSeek,
+		description: 'AI model for natural language processing.',
+		color: '#000000'
+	})
 ];
 
 export const title = 'Skills';
@@ -287,8 +303,16 @@ export const groupByCategory = (
 
 	const others: Array<Skill> = [];
 
+	// Skills that should be hidden from the skills page
+	const hiddenSkills = ['materialui', 'deepseek'];
+
 	items.forEach((item) => {
 		if (query.trim() && !item.name.toLowerCase().includes(query.trim().toLowerCase())) return;
+
+		// Skip hidden skills
+		if (hiddenSkills.includes(item.slug)) {
+			return;
+		}
 
 		// push to others if item does not have a category
 		if (!item.category) {
