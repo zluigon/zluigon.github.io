@@ -1,10 +1,9 @@
 <script lang="ts">
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import ProjectCard from '$lib/components/ProjectCard/ProjectCard.svelte';
-	import SearchPage from '$lib/components/SearchPage.svelte';
+	import CommonPage from '$lib/components/CommonPage.svelte';
 	import { items, title } from '@data/projects';
 	import type { Project, Skill } from '$lib/types';
-	import { onMount } from 'svelte';
 	import * as skills from '@data/skills';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 
@@ -16,7 +15,6 @@
 		return items.some((project) => project.skills.some((skill) => skill.slug === it.slug));
 	});
 
-	let search = '';
 	let displayed: Array<Project> = [];
 
 	const isSelected = (slug: string): boolean => {
@@ -41,34 +39,12 @@
 					filters.some((filter) => filter.isSelected && filter.slug === tech.slug)
 				);
 
-			const isSearched =
-				search.trim().length === 0 ||
-				project.name.trim().toLowerCase().includes(search.trim().toLowerCase());
-
-			return isFiltered && isSearched;
+			return isFiltered;
 		});
 	}
-
-	const onSearch = (e: CustomEvent<{ search: string }>) => {
-		search = e.detail.search;
-	};
-
-	onMount(() => {
-		const query = location.search;
-
-		if (query) {
-			const queryParams = new URLSearchParams(location.search);
-
-			const item = queryParams.get('item');
-
-			if (item) {
-				search = item;
-			}
-		}
-	});
 </script>
 
-<SearchPage {title} on:search={onSearch}>
+<CommonPage {title}>
 	<div class="projects-filters">
 		{#each filters as tech}
 			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}
@@ -88,7 +64,7 @@
 			{/each}
 		</div>
 	{/if}
-</SearchPage>
+</CommonPage>
 
 <style lang="scss">
 	.projects-list {

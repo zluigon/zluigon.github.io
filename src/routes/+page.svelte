@@ -8,7 +8,6 @@
 	// import Icon from '$lib/components/Icon/Icon.svelte';
 	import Icon from '@iconify/svelte';
 	import Title from '$lib/components/Title/Title.svelte';
-	import { getPlatformIcon } from '$lib/utils';
 
 	const isEmail = (email: string): boolean => {
 		const regex =
@@ -36,11 +35,11 @@
 			{#each links as link}
 				<a
 					class="decoration-none"
-					href={`${isEmail(link.link) ? 'mailto:' : ''} ${link.link}`}
+					href={`${isEmail(link.link) ? 'mailto:' : ''}${link.link}`}
 					target="_blank"
 					rel="noreferrer"
 				>
-				<Icon icon = {link.platform} width='36' height='36' style='color:{'var(--accent-text'}' />
+					<Icon icon={link.platform} width="24" height="24" style="color:{'var(--accent-text'}" />
 					<!-- <Icon icon={getPlatformIcon(link.platform)} color={'var(--accent-text'} size={'24px'}
 					></Icon> -->
 				</a>

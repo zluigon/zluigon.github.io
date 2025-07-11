@@ -1,11 +1,11 @@
-import { Platform, type HomeLink } from '$lib/types';
+import { type HomeLink } from '$lib/types';
 import { getSkills } from './skills';
 
 export const title = 'Home';
 export const firstName = 'Luis';
 export const lastName = 'Gonzalez';
 export const description =
-	'Software Engineer and USAF Veteran with a passion for building and designing software. I have a strong background in full-stack development and a passion for learning new technologies.';
+	'Software Engineer and USAF Veteran specializing in AI-powered applications, cloud infrastructure, and full-stack development. Passionate about leveraging modern technologies to build scalable solutions.';
 
 export const links: Array<HomeLink> = [
 	{
@@ -26,4 +26,4 @@ export const links: Array<HomeLink> = [
 	}
 ];
 
-export const skills = getSkills('js', 'ts', 'html', 'css', 'java');
+export const skills = getSkills('langchain', 'aws', 'ts', 'docker', 'terraform', 'python');

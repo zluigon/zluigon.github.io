@@ -1,0 +1,51 @@
+{
+	"ignoreBinPackage": false,
+	"ignoreDirs": [
+		"dist",
+		"build",
+		"static"
+	],
+	"ignoreMatches": [
+		"@types/*",
+		"svelte",
+		"@sveltejs/*",
+		"vite",
+		"unocss",
+		"@unocss/*",
+		"tailwindcss",
+		"typescript",
+		"tslib",
+		"prettier-plugin-svelte",
+		"eslint-plugin-svelte",
+		"svelte-eslint-parser",
+		"@iconify/*",
+		"@riadh-adrani/*",
+		"dompurify",
+		"marked",
+		"marked-*",
+		"prismjs"
+	],
+	"specials": [
+		"bin",
+		"eslint",
+		"jest",
+		"prettier",
+		"webpack",
+		"vite",
+		"svelte",
+		"unocss",
+		"markdown",
+		"syntax-highlighting"
+	],
+	"parsers": {
+		"*.svelte": [
+			"svelte"
+		],
+		"*.ts": [
+			"typescript"
+		],
+		"*.js": [
+			"javascript"
+		]
+	}
+}

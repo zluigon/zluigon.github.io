@@ -1,72 +1,88 @@
-import Assets from './assets';
+import { OrganizationLogos } from './assets';
 import { getSkills } from './skills';
 import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [
 	{
-		slug: 'rymax',
-		company: 'Rymax Inc.',
+		slug: 'verizon',
+		company: 'Verizon',
 		description:
-			'<ul><li>Successfully managed and directed a team of 15 associates, achieving a 20% increase in productivity and meeting operational goals through effective organization and workflow</li><li>Trained and onboarded newly hired associates in packing and shipping processes, resulting in a 15% improvement in efficiency and a 10% increase in order fulfillment accuracy</li><li>Operated forklifts and order pickers to execute customer orders, ensuring timely fulfillment of requests with an average turnaround time of 24 hours</li></ul>',
-		contract: ContractType.FullTime,
-		type: 'Logistics',
-		location: 'Pine Brook, NJ',
-		period: { from: new Date(2022, 0), to: new Date(2023, 0) },
-		skills: getSkills(),
-		name: 'Warehouse Associate',
-		color: '#717378',
-		links: [{ to: 'https://www.rymaxinc.com/', label: 'Rymax Inc.', type: 'link' }],
-		logo: Assets.Rymax,
-		shortDescription: ''
-	},
-	{
-		slug: 'amazon-icqa',
-		company: 'Amazon',
-		description:
-			'<ul><li>Developed and trained new hires as an ICQA Ambassador, contributing to a 25% reduction in onboarding time and ensuring consistent standards of performance were met across the team</li><li>Conducted thorough inventory Q/A checks throughout the primary fulfillment warehouse in Oklahoma City, verifying virtual and physical inventory with a 99% accuracy rate and identifying and resolving defects promptly</li><li>Analyzed inventory data and resolved discrepancies as an ICQA Problem Solver, utilizing mobile computer units to investigate and maintain accuracy in orders, shipments, and product quality, resulting in a 15% increase in overall productivity and improved customer satisfaction</li></ul>',
-		contract: ContractType.FullTime,
-		type: 'Logistics',
-		location: 'Oklahoma City, OK',
-		period: { from: new Date(2019, 8), to: new Date(2021, 11) },
-		skills: getSkills(),
-		name: 'Inventory Control Quality Assurance Associate',
-		color: '#FF9900',
-		links: [],
-		logo: Assets.Amazon,
-		shortDescription: ''
-	},
-	{
-		slug: 'amazon-sort',
-		company: 'Amazon',
-		description:
-			'<ul><li>Sorted an average of 2,500 incoming packages daily from fulfillment centers based on size, shape, and weight,ensuring accurate sorting and preparing shipments for timely delivery to customers</li><li>Coordinated with associates daily, implemented process improvements that increased productivity by 10%, and optimized performance and efficiency in the workplace</li><li>Safely loaded and secured an average of 50 pallets of customer packages onto shipping trucks daily, guaranteeing that all items were properly packaged and transported to their destination with zero reported incidents</li></ul>',
-		contract: ContractType.FullTime,
-		type: 'Logistics',
-		location: 'Oklahoma City, OK',
-		period: { from: new Date(2018, 4), to: new Date(2019, 8) },
-		skills: getSkills(),
-		name: 'Sortation Associate',
-		color: '#FF9900',
-		links: [],
-		logo: Assets.Amazon,
-		shortDescription: ''
-	},
-	{
-		slug: 'usaf',
-		company: 'United States Air Force',
-		description:
-			"<ul><li>Collaborated with local, state, and federal law enforcement agencies as a Security Forces(SF) member in concurrent,reciprocal, and exclusive jurisdictions, ensuring the safety and security of individuals and properties within the designated areas for four years</li><li>Responded to and effectively managed security incidents, in-flight emergencies, and vehicular mishaps as a first responder, maintaining a rapid response time of under 5 minutes and mitigating risks to personnel and property</li><li>Provided area and convoy security during overseas assignments in Afghanistan, Kuwait, and the United Arab Emirates(UAE), contributing to successful battlefield operations and ensuring the safety of personnel and equipment in high-threat environments</li><li>Utilized advanced management software and state-of-the-art communications equipment to facilitate seamless operations between joint forces, resulting in efficient coordination and communication for mission success</li></ul><h3>Ali Al Salem Air Base, Kuwait : February 2012 - November 2012</h3><ul><li>Spearheaded 50 security patrols and access control measures, enhancing the base's security posture and readiness</li><li>Established strong partnerships with multinational forces and local authorities, strengthening base security and threat deterrence</li><li>Contributed to a 15% improvement in base security during the deployment through innovative security strategies and training</li><li>Provided vital assistance and maintained safety standards during emergencies and accidents, ensuring the well-being of personnel and resources</li></ul><h3>Bagram Air Field, Afghanistan : March 2012 - October 2012</h3><ul><li>Conducted and led over 20 security patrols and surveillance missions, ensuring the safety and well-being of over 500 personnel and assets</li><li>Collaborated with a diverse team and local military units to enforce security protocols and contribute to the overall mission success</li><li>Achieved a 25% reduction in security incidents during the deployment through proactive security measures and rapid response</li></ul><h3>Al Dhafra Air Base, UAE : May 2013 - December 2013</h3><ul><li>Led a team in conducting over 15 security patrols and surveillance missions, safeguarding the base and its personnel from potential threats</li><li>Collaborated seamlessly with international and interagency partners, facilitating a secure environment and mission success</li><li>Significantly contributed to a 10% reduction in security incidents during the deployment, enhancing overall safety</li><li>Demonstrated exceptional first responder capabilities by swiftly addressing security incidents, in-flight emergencies,and vehicular mishaps, ensuring the rapid protection of personnel and property</li></ul>",
-		contract: ContractType.FullTime,
-		type: 'Law Enforcement',
-		location: 'Tinker AFB, OK',
-		period: { from: new Date(2011, 5), to: new Date(2015, 8) },
-		skills: getSkills(),
-		name: 'Security Forces',
-		color: '#0437F2',
-		links: [],
-		logo: Assets.USAF,
+			'<ul><li>Designed and executed a test automation framework for a distributed analytics environment utilizing Playwright, resulting in over 200 E2E tests across UI, APIs, and data visualizations, leading to a 90% reduction in manual regression testing.</li><li>Managed the end-to-end vulnerability management lifecycle for critical projects, protecting applications from numerous threats. Ensured continuous ISO 27001 compliance by integrating SAST (Fortify), SCA (BlackDuck), and container security (Sysdig) scanning.</li><li>Developed an AI utility using Python, LangChain, and AWS to parse and summarize complex Terraform plans, significantly improving clarity and reducing review time for non-technical operations teams.</li></ul>',
+		contract: ContractType.Apprenticeship,
+		type: 'Software Engineer',
+		location: 'Basking Ridge, NJ',
+		period: { from: new Date(2024, 7) },
+		skills: getSkills('ts', 'angular', 'docker', 'aws', 'python', 'langchain', 'terraform'),
+		name: 'Software Engineer',
+		color: '#EE0000',
+		links: [{ to: 'https://www.verizon.com/', label: 'Verizon', type: 'link' }],
+		logo: OrganizationLogos.Verizon,
 		shortDescription: ''
 	}
+	// {
+	// 	slug: 'rymax',
+	// 	company: 'Rymax Inc.',
+	// 	description:
+	// 		'<ul><li>Led a team of 15 associates, achieving 20% productivity increase and improved operational efficiency</li><li>Streamlined onboarding process, resulting in 15% efficiency improvement and 10% higher order accuracy</li><li>Managed warehouse operations including forklift operations and order fulfillment with 24-hour turnaround</li></ul>',
+	// 	contract: ContractType.FullTime,
+	// 	type: 'Logistics',
+	// 	location: 'Pine Brook, NJ',
+	// 	period: { from: new Date(2022, 0), to: new Date(2023, 0) },
+	// 	skills: getSkills(),
+	// 	name: 'Warehouse Associate',
+	// 	color: '#717378',
+	// 	links: [{ to: 'https://www.rymaxinc.com/', label: 'Rymax Inc.', type: 'link' }],
+	// 	logo: OrganizationLogos.Rymax,
+	// 	shortDescription: ''
+	// },
+	// {
+	// 	slug: 'amazon-icqa',
+	// 	company: 'Amazon',
+	// 	description:
+	// 		'<ul><li>Reduced onboarding time by 25% as ICQA Ambassador while maintaining performance standards</li><li>Achieved 99% accuracy in inventory verification and quality assurance checks</li><li>Improved productivity by 15% through data analysis and discrepancy resolution</li></ul>',
+	// 	contract: ContractType.FullTime,
+	// 	type: 'Logistics',
+	// 	location: 'Oklahoma City, OK',
+	// 	period: { from: new Date(2019, 8), to: new Date(2021, 11) },
+	// 	skills: getSkills(),
+	// 	name: 'Inventory Control Quality Assurance Associate',
+	// 	color: '#FF9900',
+	// 	links: [],
+	// 	logo: OrganizationLogos.Amazon,
+	// 	shortDescription: ''
+	// },
+	// {
+	// 	slug: 'amazon-sort',
+	// 	company: 'Amazon',
+	// 	description:
+	// 		'<ul><li>Processed 2,500+ packages daily with zero reported incidents</li><li>Increased workplace productivity by 10% through process improvements</li><li>Managed daily loading of 50+ pallets while ensuring safe transport</li></ul>',
+	// 	contract: ContractType.FullTime,
+	// 	type: 'Logistics',
+	// 	location: 'Oklahoma City, OK',
+	// 	period: { from: new Date(2018, 4), to: new Date(2019, 8) },
+	// 	skills: getSkills(),
+	// 	name: 'Sortation Associate',
+	// 	color: '#FF9900',
+	// 	links: [],
+	// 	logo: OrganizationLogos.Amazon,
+	// 	shortDescription: ''
+	// },
+	// {
+	// 	slug: 'usaf',
+	// 	company: 'United States Air Force',
+	// 	description:
+	// 		'<ul><li>Led security operations across multiple international deployments (Afghanistan, Kuwait, UAE)</li><li>Reduced security incidents by 15-25% through proactive measures and rapid response</li><li>Coordinated with multinational forces and local authorities to enhance base security</li><li>Managed emergency response with under 5-minute response time</li></ul>',
+	// 	contract: ContractType.FullTime,
+	// 	type: 'Law Enforcement',
+	// 	location: 'Tinker AFB, OK',
+	// 	period: { from: new Date(2011, 5), to: new Date(2015, 8) },
+	// 	skills: getSkills(),
+	// 	name: 'Security Forces',
+	// 	color: '#0437F2',
+	// 	links: [],
+	// 	logo: OrganizationLogos.USAF,
+	// 	shortDescription: ''
+	// }
 ];
 
 export const title = 'Experience';

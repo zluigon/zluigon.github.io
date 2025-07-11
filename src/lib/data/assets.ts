@@ -13,50 +13,101 @@ export const CV = {
 };
 
 export const Screenshots = {
-	WeatherMap1: sh('weather-map.png')
+	WeatherMap: sh('weather-map.png'),
+	PlanEx: sh('planex.png'),
+	PlanetExpress: sh('planetxpress.png'),
+	Morbo: sh('morbo.png'),
+	Inventory: sh('inventory-app.png')
 };
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
 
-const Assets = {
-	AWS: a('aws.svg'),
-	Bootstrap: a('bootstrap.svg'),
-	C: a('c.svg'),
-	Flask: a('flask.svg'),
-	Go: a('go.svg'),
-	Rust: a('rust.svg'),
-	Docker: a('docker.svg'),
-	Kubernetes: a('kubernetees.svg'),
-	TypeScript: a('ts.png'),
-	ReactJs: a('react.svg'),
-	Python: a('python.png'),
-	NodeJs: a('node.png'),
-	Svelte: a('svelte.png'),
-	JavaScript: a('js.png'),
-	Java: a('java.png'),
-	Firebase: a('firebase.png'),
-	Sass: a('sass.png'),
+// Skill/Technology Logos
+export const SkillLogos = {
+	// Programming Languages
+	JavaScript: a('skills/javascript.svg'),
+	TypeScript: a('skills/typescript.svg'),
+	Java: a('skills/java.png'),
+	Python: a('skills/python.svg'),
+	C: a('skills/c.svg'),
+	Go: a('skills/go.svg'),
+
+	// Frontend Technologies
+	Svelte: a('skills/svelte.png'),
+	ReactJs: a('skills/react.svg'),
+	Angular: a('skills/angular.svg'),
+	HTML: a('skills/html.svg'),
+	CSS: a('skills/css.svg'),
+	Tailwind: a('skills/tailwind.svg'),
+	Sass: a('skills/sass.png'),
+	MaterialUI: a('skills/mui.svg'),
+
+	// Backend Technologies
+	Spring: a('skills/spring.svg'),
+	NodeJs: a('skills/node.png'),
+	Express: a('skills/express.png'),
+	LangChain: a('skills/langchain.svg'),
+	LangGraph: a('skills/langgraph.svg'),
+	Promptfoo: a('skills/panda.svg'),
+
+	// DevOps & Infrastructure
+	Docker: a('skills/docker.svg'),
+	AWS: a('skills/aws.svg'),
+	GCP: a('skills/gcp.svg'),
+	Terraform: a('skills/terraform.svg'),
+	MySQL: a('skills/mysql.svg'),
+	Kubernetes: a('skills/kubernetes.svg'),
+
+	// Databases
+	MongoDB: a('skills/mongodb.svg'),
+	PostgreSQL: a('skills/postgres.png'),
+	SQLite: a('skills/sqlite.svg'),
+
+	// AI
+	DeepSeek: a('skills/deepseek.svg'),
+
+	// Development Tools
+	Git: a('skills/git.svg'),
+
+	// Legacy/Unused (keeping for reference)
+	Bootstrap: a('skills/bootstrap.svg'),
+	Flask: a('skills/flask.svg'),
+	Rust: a('skills/rust.svg'),
 	Unknown: a('no-img.svg'),
-	Tailwind: a('tailwind.svg'),
-	HTML: a('html.svg'),
-	Premiere: a('premiere.svg'),
-	Photoshop: a('photoshop.svg'),
-	CSS: a('css.svg'),
-	AfterEffects: a('after-effects.svg'),
-	Illustrator: a('illustrator.svg'),
-	Unocss: a('unocss.svg'),
-	Codeup: a('codeup.png'),
-	MySQL: a('mysql.svg'),
-	Spring: a('spring.svg'),
-	Git: a('git.svg'),
-	Thymeleaf: a('thymeleaf.svg'),
-	jQuery: a('jquery.svg'),
-	SpringBoot: a('springboot.svg'),
-	Rymax: a('rymax.png'),
-	Amazon: a('amazon.svg'),
-	USAF: a('US_AF.svg'),
-	SpringSecurity: a('springsecurity.svg')
+	Unocss: a('skills/unocss.svg'),
+	Thymeleaf: a('skills/thymeleaf.svg'),
+	jQuery: a('skills/jquery.svg'),
+	SpringBoot: a('skills/springboot.svg'),
+	SpringSecurity: a('skills/springsecurity.svg')
+};
+
+// Organization/Employer Logos
+export const OrganizationLogos = {
+	Amazon: a('organizations/amazon.svg'),
+	USAF: a('organizations/US_AF.svg'),
+	Rymax: a('organizations/rymax.png'),
+	Codeup: a('organizations/codeup.png'),
+	Multiverse: a('organizations/multiverse.svg'),
+	Verizon: a('organizations/verizon.svg'),
+	DepartmentOfTheAirForce: a('organizations/department-of-the-air-force.svg'),
+	Verizon2024: a('organizations/Verizon_2024_(symbol).svg')
+};
+
+export const ProjectLogos = {
+	PlanEx: a('PlanExLogo.svg'),
+	MV: a('mv.png'),
+	WeatherMap: a('weather.svg'),
+	PawsPursuit: a('pawsp.png'),
+	Bender: a('bender.ico'),
+	Morbo: a('Morbo.png')
+};
+
+// Legacy export for backward compatibility
+const Assets = {
+	...SkillLogos,
+	...OrganizationLogos,
+	...ProjectLogos
 };
 
 export default Assets;
