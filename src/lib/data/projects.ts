@@ -125,7 +125,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'morbo',
-		color: '#000000',
+		color: '#508c50',
 		description:
 			' An AI-powered Github Action that automatically generates a descriptive Pull RequestPR) summaries using Ollama-powered LLM. Designed to enhance developer productivity by providing a quick overview of the changes made in a PR.',
 		shortDescription:
