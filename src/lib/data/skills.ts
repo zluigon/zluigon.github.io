@@ -10,7 +10,7 @@ const categories = [
 	defineSkillCategory({ name: 'Backend Development', slug: 'backend' }),
 	defineSkillCategory({ name: 'Databases', slug: 'databases' }),
 	defineSkillCategory({ name: 'Infrastructure & Tools', slug: 'infrastructure' }),
-	defineSkillCategory({ name: 'Design & Creative', slug: 'design' })
+	defineSkillCategory({ name: 'Others', slug: 'others' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -88,6 +88,15 @@ export const items = [
 		category: 'frontend'
 	}),
 	defineSkill({
+		slug: 'angular',
+		name: 'Angular',
+		logo: SkillLogos.Angular,
+		description:
+			'TypeScript-based web application framework for building dynamic web applications.',
+		color: '#DD0031',
+		category: 'frontend'
+	}),
+	defineSkill({
 		slug: 'html',
 		name: 'HTML5',
 		logo: SkillLogos.HTML,
@@ -135,6 +144,14 @@ export const items = [
 		logo: SkillLogos.NodeJs,
 		description: 'JavaScript runtime for server-side development.',
 		color: '#339933',
+		category: 'backend'
+	}),
+	defineSkill({
+		slug: 'express',
+		name: 'Express',
+		logo: SkillLogos.Express,
+		description: 'Fast, unopinionated, minimalist web framework for Node.js.',
+		color: '#000000',
 		category: 'backend'
 	}),
 	defineSkill({
@@ -187,6 +204,14 @@ export const items = [
 		color: '#336791',
 		category: 'databases'
 	}),
+	defineSkill({
+		slug: 'sqlite',
+		name: 'SQLite',
+		logo: SkillLogos.SQLite,
+		description: 'Lightweight relational database management system.',
+		color: '#003B57',
+		category: 'databases'
+	}),
 
 	// Infrastructure & Tools
 	defineSkill({
@@ -214,6 +239,14 @@ export const items = [
 		category: 'infrastructure'
 	}),
 	defineSkill({
+		slug: 'gcp',
+		name: 'GCP',
+		logo: SkillLogos.GCP,
+		description: 'Cloud computing platform for scalable applications.',
+		color: '#4285F4',
+		category: 'infrastructure'
+	}),
+	defineSkill({
 		slug: 'terraform',
 		name: 'Terraform',
 		logo: SkillLogos.Terraform,
@@ -230,7 +263,15 @@ export const items = [
 		category: 'infrastructure'
 	})
 
-	// Design & Creative (removed - no design skills currently)
+	// AI
+	// defineSkill({
+	// 	slug: 'deepseek',
+	// 	name: 'DeepSeek',
+	// 	logo: SkillLogos.DeepSeek,
+	// 	description: 'AI model for natural language processing.',
+	// 	color: '#000000',
+	// 	category: 'others'
+	// })
 ];
 
 export const title = 'Skills';
