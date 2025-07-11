@@ -13,7 +13,11 @@ export const CV = {
 };
 
 export const Screenshots = {
-	WeatherMap1: sh('weather-map.png')
+	WeatherMap: sh('weather-map.png'),
+	PlanEx: sh('planex.png'),
+	PlanetExpress: sh('planetxpress.png'),
+	Morbo: sh('morbo.png'),
+	Inventory: sh('inventory-app.png')
 };
 
 const a = (light: string, dark?: string): Asset =>
@@ -27,6 +31,7 @@ export const SkillLogos = {
 	Java: a('skills/java.png'),
 	Python: a('skills/python.svg'),
 	C: a('skills/c.svg'),
+	Go: a('skills/go.svg'),
 
 	// Frontend Technologies
 	Svelte: a('skills/svelte.png'),
@@ -68,7 +73,6 @@ export const SkillLogos = {
 	// Legacy/Unused (keeping for reference)
 	Bootstrap: a('skills/bootstrap.svg'),
 	Flask: a('skills/flask.svg'),
-	Go: a('skills/go.svg'),
 	Rust: a('skills/rust.svg'),
 	Unknown: a('no-img.svg'),
 	Unocss: a('skills/unocss.svg'),
@@ -89,10 +93,20 @@ export const OrganizationLogos = {
 	Verizon2024: a('organizations/Verizon_2024_(symbol).svg')
 };
 
+export const ProjectLogos = {
+	PlanEx: a('PlanExLogo.svg'),
+	MV: a('mv.png'),
+	WeatherMap: a('weather.svg'),
+	PawsPursuit: a('pawsp.png'),
+	Bender: a('bender.ico'),
+	Morbo: a('Morbo.png')
+};
+
 // Legacy export for backward compatibility
 const Assets = {
 	...SkillLogos,
-	...OrganizationLogos
+	...OrganizationLogos,
+	...ProjectLogos
 };
 
 export default Assets;

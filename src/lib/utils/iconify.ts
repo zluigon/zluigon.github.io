@@ -27,7 +27,7 @@ export const iconMap: Record<string, string> = {
 
 	// Backend & Runtime
 	'Node.js': 'logos:nodejs-icon',
-	Express: 'logos:express',
+	// Express: 'logos:express-icon',
 	Fastify: 'logos:fastify',
 	NestJS: 'logos:nestjs',
 	Deno: 'logos:deno',
