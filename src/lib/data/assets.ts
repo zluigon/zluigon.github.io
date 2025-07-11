@@ -22,56 +22,66 @@ const a = (light: string, dark?: string): Asset =>
 // Skill/Technology Logos
 export const SkillLogos = {
 	// Programming Languages
-	JavaScript: a('javascript.svg'),
-	TypeScript: a('ts.png'),
-	Java: a('java.png'),
-	Python: a('python.png'),
-	C: a('c.svg'),
+	JavaScript: a('skills/javascript.svg'),
+	TypeScript: a('skills/ts.png'),
+	Java: a('skills/java.png'),
+	Python: a('skills/python.png'),
+	C: a('skills/c.svg'),
 
 	// Frontend Technologies
-	Svelte: a('svelte.png'),
-	ReactJs: a('react.svg'),
-	HTML: a('html.svg'),
-	CSS: a('css.svg'),
-	Tailwind: a('tailwind.svg'),
-	Sass: a('sass.png'),
+	Svelte: a('skills/svelte.png'),
+	ReactJs: a('skills/react.svg'),
+	HTML: a('skills/html.svg'),
+	CSS: a('skills/css.svg'),
+	Tailwind: a('skills/tailwind.svg'),
+	Sass: a('skills/sass.png'),
 
 	// Backend Technologies
-	Spring: a('spring.svg'),
-	NodeJs: a('node.png'),
-	// Firebase: a('firebase.png'), // File not available
+	Spring: a('skills/spring.svg'),
+	NodeJs: a('skills/node.png'),
+	LangChain: a('skills/langchain.svg'),
+	LangGraph: a('skills/langgraph.svg'),
+	Promptfoo: a('skills/panda.svg'),
+	// Firebase: a('skills/firebase.png'), // File not available
 
 	// DevOps & Infrastructure
-	Docker: a('docker-icon.svg'),
-	AWS: a('aws.svg'),
-	Terraform: a('terraform.svg'),
-	MySQL: a('mysql.svg'),
+	Docker: a('skills/docker-icon.svg'),
+	AWS: a('skills/aws.svg'),
+	Terraform: a('skills/terraform.svg'),
+	MySQL: a('skills/mysql.svg'),
+	Kubernetes: a('skills/kubernetes.svg'),
+
+	// Databases
+	MongoDB: a('skills/mongodb.svg'),
+	PostgreSQL: a('skills/postgres.png'),
 
 	// Design Tools (removed - files not available)
 
 	// Development Tools
-	Git: a('git.svg'),
+	Git: a('skills/git.svg'),
 
 	// Legacy/Unused (keeping for reference)
-	Bootstrap: a('bootstrap.svg'),
-	Flask: a('flask.svg'),
-	Go: a('go.svg'),
-	Rust: a('rust.svg'),
-	Kubernetes: a('kubernetees.svg'),
+	Bootstrap: a('skills/bootstrap.svg'),
+	Flask: a('skills/flask.svg'),
+	Go: a('skills/go.svg'),
+	Rust: a('skills/rust.svg'),
 	Unknown: a('no-img.svg'),
-	Unocss: a('unocss.svg'),
-	Thymeleaf: a('thymeleaf.svg'),
-	jQuery: a('jquery.svg'),
-	SpringBoot: a('springboot.svg'),
-	SpringSecurity: a('springsecurity.svg')
+	Unocss: a('skills/unocss.svg'),
+	Thymeleaf: a('skills/thymeleaf.svg'),
+	jQuery: a('skills/jquery.svg'),
+	SpringBoot: a('skills/springboot.svg'),
+	SpringSecurity: a('skills/springsecurity.svg')
 };
 
 // Organization/Employer Logos
 export const OrganizationLogos = {
-	Amazon: a('amazon.svg'),
-	USAF: a('US_AF.svg'),
-	Rymax: a('rymax.png'),
-	Codeup: a('codeup.png')
+	Amazon: a('organizations/amazon.svg'),
+	USAF: a('organizations/US_AF.svg'),
+	Rymax: a('organizations/rymax.png'),
+	Codeup: a('organizations/codeup.png'),
+	Verizon: a('organizations/verizon.svg'),
+	DepartmentOfTheAirForce: a('organizations/department-of-the-air-force.svg'),
+	Verizon2024: a('organizations/Verizon_2024_(symbol).svg')
 };
 
 // Legacy export for backward compatibility
