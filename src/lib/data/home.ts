@@ -26,4 +26,4 @@ export const links: Array<HomeLink> = [
 	}
 ];
 
-export const skills = getSkills('js', 'ts', 'html', 'css', 'java');
+export const skills = getSkills('langchain', 'aws', 'ts', 'docker', 'terraform', 'python');
