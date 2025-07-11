@@ -3,6 +3,19 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
+		name: 'Multiverse',
+		degree: '',
+		description: '',
+		location: 'Remote',
+		logo: OrganizationLogos.Multiverse,
+		organization: 'Multiverse',
+		period: { from: new Date(2024, 7) },
+		shortDescription: '',
+		slug: 'multiverse',
+		subjects: [],
+		color: '#324ea8'
+	},
+	{
 		name: 'Codeup',
 		degree: 'Certificate of Completion',
 		description: '',
