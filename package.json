@@ -12,10 +12,15 @@
 		"format": "prettier --write .",
 		"depcheck": "depcheck",
 		"pre-deploy": "npm ci && npm run lint && npm run check && npm run build",
+		"depcheck": "depcheck",
+		"pre-deploy": "npm ci && npm run lint && npm run check && npm run build",
 		"deploy": "npm run build && npx gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@iconify-json/carbon": "^1.1.28",
+		"@iconify-json/devicon": "^1.2.29",
+		"@iconify-json/logos": "^1.2.4",
+		"@iconify-json/simple-icons": "^1.2.41",
 		"@iconify-json/devicon": "^1.2.29",
 		"@iconify-json/logos": "^1.2.4",
 		"@iconify-json/simple-icons": "^1.2.41",
@@ -50,6 +55,7 @@
 		"slugify": "^1.6.6",
 		"svelte": "^4.2.19",
 		"svelte-check": "^3.6.3",
+		"svelte-eslint-parser": "^1.2.0",
 		"svelte-eslint-parser": "^1.2.0",
 		"tailwindcss": "^3.4.1",
 		"tslib": "^2.6.2",
