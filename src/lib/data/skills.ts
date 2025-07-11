@@ -6,7 +6,9 @@ const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCat
 
 const categories = [
 	defineSkillCategory({ name: 'Programming Languages', slug: 'languages' }),
-	defineSkillCategory({ name: 'Web Development', slug: 'web-dev' }),
+	defineSkillCategory({ name: 'Frontend Development', slug: 'frontend' }),
+	defineSkillCategory({ name: 'Backend Development', slug: 'backend' }),
+	defineSkillCategory({ name: 'Databases', slug: 'databases' }),
 	defineSkillCategory({ name: 'Infrastructure & Tools', slug: 'infrastructure' }),
 	defineSkillCategory({ name: 'Design & Creative', slug: 'design' })
 ] as const;
@@ -68,14 +70,14 @@ export const items = [
 		category: 'languages'
 	}),
 
-	// Web Development
+	// Frontend Development
 	defineSkill({
 		slug: 'svelte',
 		name: 'Svelte',
 		logo: SkillLogos.Svelte,
 		description: 'Front-end compiler for building reactive user interfaces.',
 		color: '#FF3E00',
-		category: 'web-dev'
+		category: 'frontend'
 	}),
 	defineSkill({
 		slug: 'react',
@@ -83,7 +85,7 @@ export const items = [
 		logo: SkillLogos.ReactJs,
 		description: 'JavaScript library for building user interfaces.',
 		color: '#61DAFB',
-		category: 'web-dev'
+		category: 'frontend'
 	}),
 	defineSkill({
 		slug: 'html',
@@ -91,7 +93,7 @@ export const items = [
 		logo: SkillLogos.HTML,
 		description: 'Markup language for structuring web content.',
 		color: '#E34F26',
-		category: 'web-dev'
+		category: 'frontend'
 	}),
 	defineSkill({
 		slug: 'css',
@@ -99,7 +101,7 @@ export const items = [
 		logo: SkillLogos.CSS,
 		description: 'Style sheet language for web presentation.',
 		color: '#1572B6',
-		category: 'web-dev'
+		category: 'frontend'
 	}),
 	defineSkill({
 		slug: 'tailwind',
@@ -107,7 +109,7 @@ export const items = [
 		logo: SkillLogos.Tailwind,
 		description: 'Utility-first CSS framework for custom UI design.',
 		color: '#06B6D4',
-		category: 'web-dev'
+		category: 'frontend'
 	}),
 	defineSkill({
 		slug: 'sass',
@@ -115,15 +117,17 @@ export const items = [
 		logo: SkillLogos.Sass,
 		description: 'CSS preprocessor for enhanced styling capabilities.',
 		color: '#CC6699',
-		category: 'web-dev'
+		category: 'frontend'
 	}),
+
+	// Backend Development
 	defineSkill({
 		slug: 'spring',
 		name: 'Spring',
 		logo: SkillLogos.Spring,
 		description: 'Application framework for Java platform.',
 		color: '#6DB33F',
-		category: 'web-dev'
+		category: 'backend'
 	}),
 	defineSkill({
 		slug: 'nodejs',
@@ -131,15 +135,57 @@ export const items = [
 		logo: SkillLogos.NodeJs,
 		description: 'JavaScript runtime for server-side development.',
 		color: '#339933',
-		category: 'web-dev'
+		category: 'backend'
 	}),
+	defineSkill({
+		slug: 'langchain',
+		name: 'LangChain',
+		logo: SkillLogos.LangChain,
+		description: 'Framework for developing applications powered by language models.',
+		color: '#1C3C3C',
+		category: 'backend'
+	}),
+	defineSkill({
+		slug: 'langgraph',
+		name: 'LangGraph',
+		logo: SkillLogos.LangGraph,
+		description: 'Library for building stateful, multi-actor applications with LLMs.',
+		color: '#1C3C3C',
+		category: 'backend'
+	}),
+	defineSkill({
+		slug: 'promptfoo',
+		name: 'Promptfoo',
+		logo: SkillLogos.Promptfoo,
+		description: 'Framework for testing and evaluating prompts and LLM applications.',
+		color: '#FF6B6B',
+		category: 'backend'
+	}),
+
+	// Databases
 	defineSkill({
 		slug: 'mysql',
 		name: 'MySQL',
 		logo: SkillLogos.MySQL,
 		description: 'Open-source relational database management system.',
 		color: '#4479A1',
-		category: 'web-dev'
+		category: 'databases'
+	}),
+	defineSkill({
+		slug: 'mongodb',
+		name: 'MongoDB',
+		logo: SkillLogos.MongoDB,
+		description: 'NoSQL document database for modern applications.',
+		color: '#47A248',
+		category: 'databases'
+	}),
+	defineSkill({
+		slug: 'postgresql',
+		name: 'PostgreSQL',
+		logo: SkillLogos.PostgreSQL,
+		description: 'Advanced open-source relational database system.',
+		color: '#336791',
+		category: 'databases'
 	}),
 
 	// Infrastructure & Tools
@@ -149,6 +195,14 @@ export const items = [
 		logo: SkillLogos.Docker,
 		description: 'Containerization platform for application deployment.',
 		color: '#2496ED',
+		category: 'infrastructure'
+	}),
+	defineSkill({
+		slug: 'kubernetes',
+		name: 'Kubernetes',
+		logo: SkillLogos.Kubernetes,
+		description: 'Container orchestration platform for automating deployment and scaling.',
+		color: '#326CE5',
 		category: 'infrastructure'
 	}),
 	defineSkill({
