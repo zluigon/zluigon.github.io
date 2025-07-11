@@ -23,30 +23,33 @@ const a = (light: string, dark?: string): Asset =>
 export const SkillLogos = {
 	// Programming Languages
 	JavaScript: a('skills/javascript.svg'),
-	TypeScript: a('skills/ts.png'),
+	TypeScript: a('skills/typescript.svg'),
 	Java: a('skills/java.png'),
-	Python: a('skills/python.png'),
+	Python: a('skills/python.svg'),
 	C: a('skills/c.svg'),
 
 	// Frontend Technologies
 	Svelte: a('skills/svelte.png'),
 	ReactJs: a('skills/react.svg'),
+	Angular: a('skills/angular.svg'),
 	HTML: a('skills/html.svg'),
 	CSS: a('skills/css.svg'),
 	Tailwind: a('skills/tailwind.svg'),
 	Sass: a('skills/sass.png'),
+	MaterialUI: a('skills/mui.svg'),
 
 	// Backend Technologies
 	Spring: a('skills/spring.svg'),
 	NodeJs: a('skills/node.png'),
+	Express: a('skills/express.png'),
 	LangChain: a('skills/langchain.svg'),
 	LangGraph: a('skills/langgraph.svg'),
 	Promptfoo: a('skills/panda.svg'),
-	// Firebase: a('skills/firebase.png'), // File not available
 
 	// DevOps & Infrastructure
-	Docker: a('skills/docker-icon.svg'),
+	Docker: a('skills/docker.svg'),
 	AWS: a('skills/aws.svg'),
+	GCP: a('skills/gcp.svg'),
 	Terraform: a('skills/terraform.svg'),
 	MySQL: a('skills/mysql.svg'),
 	Kubernetes: a('skills/kubernetes.svg'),
@@ -54,8 +57,10 @@ export const SkillLogos = {
 	// Databases
 	MongoDB: a('skills/mongodb.svg'),
 	PostgreSQL: a('skills/postgres.png'),
+	SQLite: a('skills/sqlite.svg'),
 
-	// Design Tools (removed - files not available)
+	// AI
+	DeepSeek: a('skills/deepseek.svg'),
 
 	// Development Tools
 	Git: a('skills/git.svg'),
