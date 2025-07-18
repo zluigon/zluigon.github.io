@@ -17,16 +17,16 @@
 </script>
 
 <div class="nav-menu">
-	<nav class="container flex flex-row items-center text-sm">
+	<nav class="container flex flex-row items-center text-base">
 		<a
 			href={`${base}/`}
 			class="nav-menu-left decoration-none w-auto md:w-150px lg:w-auto row flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
 			<Icon icon="carbon:code" width="2em" height="2em" />
-			<span
-				class="ml-2 text-md font-bold hidden md:inline overflow-hidden whitespace-nowrap text-ellipsis"
+			<!-- <span
+				class="ml-2 text-lg font-bold hidden md:inline overflow-hidden whitespace-nowrap text-ellipsis"
 				>{HOME.firstName} {HOME.lastName}
-			</span>
+			</span> -->
 		</a>
 		<div class="flex-1 block overflow-hidden sm:hidden whitespace-nowrap text-ellipsis text-center">
 			{HOME.firstName}
@@ -41,7 +41,7 @@
 			{/each}
 		</div>
 		<div
-			class="row h-full justify-center items-stretch m-l-auto md:m-l-0 w-auto md:w-150px gap-1 text-1.15em"
+			class="row h-full justify-center items-stretch m-l-auto md:m-l-0 w-auto md:w-150px gap-1 text-1.25em"
 		>
 			<div class="row hidden md:flex">
 				<a
@@ -51,7 +51,7 @@
 					<Icon icon="carbon:search" width="1.2em" height="1.2em" />
 				</a>
 				<button
-					class="bg-transparent text-1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
+					class="bg-transparent text-1.1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
 					on:click={() => toggleTheme()}
 				>
 					{#if $theme}

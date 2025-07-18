@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import { title, groupByCategory } from '@data/skills';
 	import { getAssetURL } from '$lib/data/assets';
 
@@ -27,13 +26,7 @@
 					</div>
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5">
 						{#each group.items as skill (skill.slug)}
-							<Card
-								classes={['cursor-pointer decoration-none']}
-								tiltDegree={1}
-								href={`${base}/skills/${skill.slug}`}
-								bgImg={getAssetURL(skill.logo)}
-								color={skill.color}
-							>
+							<Card tiltDegree={1} bgImg={getAssetURL(skill.logo)} color={skill.color}>
 								<p class="text-[var(--tertiary-text)]">{skill.name}</p>
 							</Card>
 						{/each}

@@ -17,13 +17,13 @@ export const links: Array<HomeLink> = [
 		link: 'https://www.linkedin.com/in/zluigon/'
 	},
 	{
-		platform: 'simple-icons:maildotru',
+		platform: 'carbon:email',
 		link: 'luis.nmn.gonzalez@gmail.com'
-	},
-	{
-		platform: 'mdi:resume',
-		link: 'https://docs.google.com/document/d/1F9354AII9r7lxVu0iee0-ogjx7oF8nlS2ePFs06TxS0/edit?usp=sharing'
 	}
+	// {
+	// 	platform: 'mdi:resume',
+	// 	link: 'https://docs.google.com/document/d/1F9354AII9r7lxVu0iee0-ogjx7oF8nlS2ePFs06TxS0/edit?usp=sharing'
+	// }
 ];
 
 export const skills = getSkills('langchain', 'aws', 'ts', 'docker', 'terraform', 'python');
