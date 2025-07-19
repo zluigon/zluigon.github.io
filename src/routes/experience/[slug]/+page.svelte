@@ -36,7 +36,7 @@
 					</div>
 					<p class="font-300 text-[var(--tertiary-text)] m-y-2 text-center">
 						{data.experience.company} · {data.experience.location}
-						 <!-- · {data.experience.type} -->
+						<!-- · {data.experience.type} -->
 					</p>
 					<p class="font-300 text-0.9em text-[var(--tertiary-text)] m-y-2 text-center">
 						{getTimeDiff(data.experience.period.from, data.experience.period.to)}

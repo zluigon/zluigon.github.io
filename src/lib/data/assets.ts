@@ -17,7 +17,9 @@ export const Screenshots = {
 	PlanEx: sh('planex.png'),
 	PlanetExpress: sh('planetxpress.png'),
 	Morbo: sh('morbo.png'),
-	Inventory: sh('inventory-app.png')
+	Inventory: sh('inventory-app.png'),
+	Inventory2: sh('KLY-add.png'),
+	Inventory3: sh('KLY-details.png')
 };
 
 const a = (light: string, dark?: string): Asset =>
