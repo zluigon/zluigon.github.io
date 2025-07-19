@@ -11,7 +11,7 @@ export const items: Array<Experience> = [
 		contract: ContractType.Apprenticeship,
 		type: 'Software Engineer',
 		location: 'Basking Ridge, NJ',
-		period: { from: new Date(2024, 7), to: new Date(2025, 7) },
+		period: { from: new Date(2024, 7), to: new Date(2025, 6) },
 		skills: getSkills('ts', 'angular', 'docker', 'aws', 'python', 'langchain', 'terraform'),
 		name: 'Thrive Software Engineering Apprentice',
 		color: '#EE0000',
