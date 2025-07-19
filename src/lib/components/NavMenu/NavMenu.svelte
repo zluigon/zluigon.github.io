@@ -28,10 +28,10 @@
 				>{HOME.firstName} {HOME.lastName}
 			</span> -->
 		</a>
-		<div class="flex-1 block overflow-hidden sm:hidden whitespace-nowrap text-ellipsis text-center">
+		<!-- <div class="flex-1 block overflow-hidden sm:hidden whitespace-nowrap text-ellipsis text-center">
 			{HOME.firstName}
 			{HOME.lastName}
-		</div>
+		</div> -->
 		<div class="flex-row flex-1 self-center h-full justify-center hidden md:flex">
 			{#each items as item}
 				<a href={`${base}${item.to}`} class="nav-menu-item !text-[var(--secondary-text)]">
@@ -45,6 +45,7 @@
 		>
 			<div class="row hidden md:flex">
 				<button
+					aria-label={$theme ? 'Switch to light mode' : 'Switch to dark mode'}
 					class="bg-transparent text-1.1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
 					on:click={() => toggleTheme()}
 				>
@@ -81,15 +82,16 @@
 		</div>
 		<div class="col gap-2 m-t-7">
 			<button
+				aria-label={$theme ? 'Switch to light mode' : 'Switch to dark mode'}
 				class="bg-transparent text-1em border-none cursor-pointer px-6 py-3 gap-2 row hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
 				on:click={() => toggleTheme()}
 			>
 				{#if $theme}
 					<Icon icon="carbon:moon" width="1.2em" height="1.2em" />
-					<span>Dark Theme</span>
+					<span>Dark</span>
 				{:else}
 					<Icon icon="carbon:sun" width="1.2em" height="1.2em" />
-					<span>Light Theme</span>
+					<span>Light</span>
 				{/if}
 			</button>
 		</div>

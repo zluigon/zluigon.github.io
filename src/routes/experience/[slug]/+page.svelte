@@ -35,7 +35,8 @@
 						<MainTitle>{data.experience.name}</MainTitle>
 					</div>
 					<p class="font-300 text-[var(--tertiary-text)] m-y-2 text-center">
-						{data.experience.company} · {data.experience.location} · {data.experience.type}
+						{data.experience.company} · {data.experience.location}
+						 <!-- · {data.experience.type} -->
 					</p>
 					<p class="font-300 text-0.9em text-[var(--tertiary-text)] m-y-2 text-center">
 						{getTimeDiff(data.experience.period.from, data.experience.period.to)}
@@ -45,7 +46,7 @@
 					</div>
 					<div class="row-center flex-wrap text-[0.9em] text-[var(--tertiary-text)] m-b-2">
 						{#each data.experience.links as item}
-							<Chip href={item.to}>
+							<Chip>
 								<div class="row-center gap-2">
 									<UIcon icon="i-carbon-link" />
 									<span>{item.label}</span>
