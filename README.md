@@ -12,7 +12,7 @@ My passion for technology stems from a desire to create solutions that improve p
 
 ## Areas of Interest
 
-- **AI/ML Integration**: Building intelligent applications using LangChain, LangGraph, and modern LLMs
+- **AI/ML Integration**: Leveraging LangChain, LangGraph, and modern LLMs to build intelligent applications
 - **Cloud Infrastructure**: Designing and deploying scalable solutions on AWS and GCP
 - **Full-Stack Development**: Creating seamless user experiences with modern frameworks
 - **DevOps & Automation**: Streamlining development workflows and deployment processes
@@ -48,35 +48,35 @@ Throughout my apprenticeship, I've worked on several key projects that demonstra
 A full-stack eCommerce inventory management system built with React, Node.js, and SQLite. Features complete CRUD operations and a user-friendly interface for managing product inventory.
 
 **Technologies**: React, Node.js, Express, SQLite  
-**GitHub**: [KLY Titans](https://github.com/KLY-Titans/inventory-app) | **Live Site**: [Inventory App](https://inventory-app-kp4e.onrender.com/)
+[GitHub](https://github.com/KLY-Titans/inventory-app) | [Live Site](https://inventory-app-kp4e.onrender.com/)
 
 ### [QuickThinx Blogging Platform](https://github.com/zluigon/quickthinx)
 
 A secure full-stack blogging application with JWT authentication and author-only content management. Built with Angular and Node.js, featuring comprehensive user authentication and authorization.
 
 **Technologies**: Angular, TypeScript, Node.js, Express, MongoDB  
-**GitHub**: [QuickThinx](https://github.com/zluigon/quickthinx)
+[GitHub](https://github.com/zluigon/quickthinx) | [Live Site](https://quickthinx.onrender.com/)
 
 ### [Planet Express API](https://github.com/Farnsworth-Enterprises/PlanetExpress)
 
 A secure backend API service for internal shipment management with role-based access control. Implements JWT authentication and full CRUD operations for shipment tracking.
 
 **Technologies**: Node.js, Express, SQLite, JWT Authentication  
-**GitHub**: [Planet Express](https://github.com/Farnsworth-Enterprises/PlanetExpress)
+[GitHub](https://github.com/Farnsworth-Enterprises/PlanetExpress) | [Live Site](https://planet-express-api.onrender.com/)
 
 ### [PlanEx Crew Management](https://planexcrew.netlify.app/)
 
 An interactive web application inspired by Futurama for crew management and mission assignment. Features strategic team building and mission difficulty evaluation.
 
 **Technologies**: React, Node.js, Express, Material-UI  
-**GitHub**: [PlanEx Crew](https://github.com/Farnsworth-Enterprises/PlanExCrew) | **Live Site**: [PlanEx](https://planexcrew.netlify.app/)
+[GitHub](https://github.com/Farnsworth-Enterprises/PlanExCrew) | [Live Site](https://planexcrew.netlify.app/)
 
 ### [Morbo - AI PR Summarizer](https://github.com/marketplace/actions/pr-summary-generator)
 
-An AI-powered GitHub Action that automatically generates descriptive Pull Request summaries using Ollama-powered LLM. Deployed on Google Cloud Platform with Docker containerization.
+An AI-powered GitHub Action that automatically generates descriptive Pull Request summaries using Ollama running on GCP Cloud Run with DeepSeek LLM. Deployed on Google Cloud Platform with Docker containerization.
 
 **Technologies**: Python, Docker, LangChain, GCP, Ollama  
-**GitHub**: [Morbo](https://github.com/Farnsworth-Enterprises/Morbo) | **Marketplace**: [PR Summary Generator](https://github.com/marketplace/actions/pr-summary-generator)
+[GitHub](https://github.com/Farnsworth-Enterprises/Morbo) | [Marketplace](https://github.com/marketplace/actions/pr-summary-generator)
 
 ## My Tech Stack
 
@@ -84,11 +84,8 @@ An AI-powered GitHub Action that automatically generates descriptive Pull Reques
 
 - **JavaScript/TypeScript**
 - **Python**
-- **SvelteKit**
-- **React**
+- **Node.js**
 - **Angular**
-- **Spring**
-- **Node.js** - Server-side JavaScript
 
 ### AI & Modern Tools
 
@@ -100,9 +97,7 @@ An AI-powered GitHub Action that automatically generates descriptive Pull Reques
 ### Cloud & Infrastructure
 
 - **AWS**
-- **GCP**
 - **Docker**
-- **Kubernetes**
 - **Terraform**
 
 ### Databases
