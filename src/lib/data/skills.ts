@@ -287,6 +287,13 @@ export const items = [
 		logo: SkillLogos.DeepSeek,
 		description: 'AI model for natural language processing.',
 		color: '#000000'
+	}),
+	defineSkill({
+		slug: 'ollama',
+		name: 'Ollama',
+		logo: SkillLogos.Ollama,
+		description: 'Local large language model server for running AI models.',
+		color: '#FF6B35'
 	})
 ];
 
@@ -304,7 +311,7 @@ export const groupByCategory = (
 	const others: Array<Skill> = [];
 
 	// Skills that should be hidden from the skills page
-	const hiddenSkills = ['materialui', 'deepseek'];
+	const hiddenSkills = ['materialui', 'deepseek', 'ollama'];
 
 	items.forEach((item) => {
 		if (query.trim() && !item.name.toLowerCase().includes(query.trim().toLowerCase())) return;
