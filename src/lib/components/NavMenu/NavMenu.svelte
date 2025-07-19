@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { theme, toggleTheme } from '$lib/stores/theme';
 	import { items } from '@data/navbar';
-	import * as HOME from '@data/home';
+	// import * as HOME from '@data/home';
 	import Icon from '@iconify/svelte';
 	import { base } from '$app/paths';
 

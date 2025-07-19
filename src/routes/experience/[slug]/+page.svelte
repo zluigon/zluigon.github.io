@@ -2,7 +2,7 @@
 	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import MainTitle from '$lib/components/Title/Title.svelte';
 
-	import { base } from '$app/paths';
+	// import { base } from '$app/paths';
 	import type { Experience } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
 	import { title } from '@data/experience';

@@ -93,7 +93,7 @@ export const items: Array<Project> = [
 			from: new Date(2024, 4),
 			to: new Date(2024, 4)
 		},
-		skills: getSkills('angular', 'js', 'nodejs', 'express', 'mongodb'),
+		skills: getSkills('angular', 'ts', 'nodejs', 'express', 'mongodb'),
 		type: 'Full-Stack Web Application'
 	},
 	{
@@ -121,7 +121,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'planex',
-		color: '#FF5722', // Orange for Futurama/gaming theme
+		color: '#FF5722',
 		description: `<strong>Overview:</strong> A web-based application inspired by Futurama that allows users to assemble crews for various missions. Users can evaluate crew member ratings and strategically select the most suitable team to complete missions of different difficulty levels. Features an interactive crew management system with mission assignment capabilities.<br><br><strong>Skills Applied:</strong><ul><li><strong>Frontend Development:</strong> Built interactive UI using React and Material-UI</li><li><strong>State Management:</strong> Implemented complex state management for crew and mission data</li><li><strong>Backend Integration:</strong> Connected React frontend with Node.js backend API</li><li><strong>User Experience:</strong> Designed intuitive crew selection and mission assignment interface</li></ul><br><strong>Takeaways:</strong><ul><li>Gained experience with React component architecture and state management</li><li>Learned to design user interfaces for complex data relationships</li><li>Improved skills in frontend-backend integration</li><li>Understood the importance of user experience in interactive applications</li></ul><br><strong>Contributors:</strong><ul><li><a href="https://github.com/zluigon" target="_blank" rel="noopener noreferrer">Luis Gonzalez</a></li><li><a href="https://github.com/jbiehl88" target="_blank" rel="noopener noreferrer">Jordan Biehl</a></li></ul>`,
 		shortDescription:
 			'Interactive crew management game with strategic mission assignment and team building.',
@@ -135,7 +135,7 @@ export const items: Array<Project> = [
 			from: new Date(2025, 4),
 			to: new Date(2025, 4)
 		},
-		skills: getSkills('react', 'js', 'nodejs', 'materialui'),
+		skills: getSkills('react', 'js', 'nodejs', 'express', 'materialui'),
 		type: 'Web Application',
 		screenshots: [{ label: '', src: Screenshots.PlanEx }]
 	},
