@@ -90,8 +90,8 @@ export const items: Array<Project> = [
 		logo: Assets.QuickThinx,
 		name: 'QuickThinx',
 		period: {
-			from: new Date(2024, 4),
-			to: new Date(2024, 4)
+			from: new Date(2024, 10),
+			to: new Date(2024, 10)
 		},
 		skills: getSkills('angular', 'ts', 'nodejs', 'express', 'mongodb'),
 		type: 'Full-Stack Web Application'
@@ -112,8 +112,8 @@ export const items: Array<Project> = [
 		logo: Assets.PlanEx,
 		name: 'Planet Express',
 		period: {
-			from: new Date(2025, 3),
-			to: new Date(2025, 3)
+			from: new Date(2025, 2),
+			to: new Date(2025, 2)
 		},
 		skills: getSkills('js', 'nodejs', 'express', 'sqlite'),
 		type: 'Backend API',
