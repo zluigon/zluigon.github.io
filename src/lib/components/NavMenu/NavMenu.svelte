@@ -50,9 +50,9 @@
 					on:click={() => toggleTheme()}
 				>
 					{#if $theme}
-						<Icon icon="carbon:moon" width="1.2em" height="1.2em" />
-					{:else}
 						<Icon icon="carbon:sun" width="1.2em" height="1.2em" />
+					{:else}
+						<Icon icon="carbon:moon" width="1.2em" height="1.2em" />
 					{/if}
 				</button>
 			</div>
@@ -87,11 +87,11 @@
 				on:click={() => toggleTheme()}
 			>
 				{#if $theme}
-					<Icon icon="carbon:moon" width="1.2em" height="1.2em" />
-					<span>Dark</span>
-				{:else}
 					<Icon icon="carbon:sun" width="1.2em" height="1.2em" />
 					<span>Light</span>
+				{:else}
+					<Icon icon="carbon:moon" width="1.2em" height="1.2em" />
+					<span>Dark</span>
 				{/if}
 			</button>
 		</div>
