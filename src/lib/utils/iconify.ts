@@ -3,7 +3,7 @@
 // Map of technology names to their Iconify icon names
 export const iconMap: Record<string, string> = {
 	// Programming Languages
-	JavaScript: 'logos:javascript',
+	// JavaScript: 'logos:javascript',
 	TypeScript: 'logos:typescript-icon',
 	Python: 'logos:python',
 	Java: 'logos:java',

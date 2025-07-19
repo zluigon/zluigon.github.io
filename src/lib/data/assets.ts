@@ -17,7 +17,9 @@ export const Screenshots = {
 	PlanEx: sh('planex.png'),
 	PlanetExpress: sh('planetxpress.png'),
 	Morbo: sh('morbo.png'),
-	Inventory: sh('inventory-app.png')
+	Inventory: sh('inventory-app.png'),
+	Inventory2: sh('KLY-add.png'),
+	Inventory3: sh('KLY-details.png')
 };
 
 const a = (light: string, dark?: string): Asset =>
@@ -66,7 +68,7 @@ export const SkillLogos = {
 
 	// AI
 	DeepSeek: a('skills/deepseek.svg'),
-
+	Ollama: a('skills/ollama.svg'),
 	// Development Tools
 	Git: a('skills/git.svg'),
 
@@ -100,7 +102,8 @@ export const ProjectLogos = {
 	WeatherMap: a('weather.svg'),
 	PawsPursuit: a('pawsp.png'),
 	Bender: a('bender.ico'),
-	Morbo: a('Morbo.png')
+	Morbo: a('Morbo.png'),
+	QuickThinx: a('thinx.png')
 };
 
 // Legacy export for backward compatibility

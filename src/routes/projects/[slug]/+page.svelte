@@ -2,7 +2,7 @@
 	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import MainTitle from '$lib/components/Title/Title.svelte';
 
-	import { base } from '$app/paths';
+	// import { base } from '$app/paths';
 	import type { Project } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
 	import { title } from '@data/projects';
@@ -63,10 +63,7 @@
 					</div>
 					<div class="row-center flex-wrap m-b-2">
 						{#each data.project.skills as item}
-							<Chip
-								classes="inline-flex flex-row items-center justify-center"
-								href={`${base}/skills/${item.slug}`}
-							>
+							<Chip classes="inline-flex flex-row items-center justify-center">
 								<CardLogo
 									src={getAssetURL(item.logo)}
 									alt={item.name}

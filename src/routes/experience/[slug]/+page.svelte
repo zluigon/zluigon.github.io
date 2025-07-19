@@ -2,7 +2,7 @@
 	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import MainTitle from '$lib/components/Title/Title.svelte';
 
-	import { base } from '$app/paths';
+	// import { base } from '$app/paths';
 	import type { Experience } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
 	import { title } from '@data/experience';
@@ -35,7 +35,8 @@
 						<MainTitle>{data.experience.name}</MainTitle>
 					</div>
 					<p class="font-300 text-[var(--tertiary-text)] m-y-2 text-center">
-						{data.experience.company} · {data.experience.location} · {data.experience.type}
+						{data.experience.company} · {data.experience.location}
+						<!-- · {data.experience.type} -->
 					</p>
 					<p class="font-300 text-0.9em text-[var(--tertiary-text)] m-y-2 text-center">
 						{getTimeDiff(data.experience.period.from, data.experience.period.to)}
@@ -45,7 +46,7 @@
 					</div>
 					<div class="row-center flex-wrap text-[0.9em] text-[var(--tertiary-text)] m-b-2">
 						{#each data.experience.links as item}
-							<Chip href={item.to}>
+							<Chip>
 								<div class="row-center gap-2">
 									<UIcon icon="i-carbon-link" />
 									<span>{item.label}</span>
@@ -55,10 +56,7 @@
 					</div>
 					<div class="row-center flex-wrap m-b-2">
 						{#each data.experience.skills as item}
-							<Chip
-								classes="inline-flex flex-row items-center justify-center"
-								href={`${base}/skills/${item.slug}`}
-							>
+							<Chip classes="inline-flex flex-row items-center justify-center">
 								<CardLogo
 									src={getAssetURL(item.logo)}
 									alt={item.name}
