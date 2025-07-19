@@ -9,7 +9,7 @@ export const items: Array<Education> = [
 		location: 'Remote',
 		logo: OrganizationLogos.Multiverse,
 		organization: 'Multiverse',
-		period: { from: new Date(2024, 7), to: new Date(2025, 7) },
+		period: { from: new Date(2024, 7), to: new Date(2025, 6) },
 		shortDescription: '12-month apprenticeship program',
 		slug: 'multiverse',
 		subjects: ['Full Stack Development', 'Software Engineering', 'Agile Methodologies', 'DevOps'],
@@ -17,7 +17,7 @@ export const items: Array<Education> = [
 	},
 	{
 		name: 'Codeup',
-		degree: 'Certificate of Completion',
+		degree: 'Certificate of Completion: Web Development',
 		description: '',
 		location: 'San Antonio, TX',
 		logo: OrganizationLogos.Codeup,
