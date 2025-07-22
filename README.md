@@ -24,7 +24,7 @@ My passion for technology stems from a desire to create solutions that improve p
 
 _August 2024 - Present | Basking Ridge, NJ_
 
-I'm currently part of Verizon's Network and Security team, collaborating with cross-functional teams including DevOps and Analytics to deliver enterprise-level solutions. Working closely with senior engineers and architects, I've implemented best practices and ensured code quality across multiple projects.
+I'm currently part of Verizon's Network and Security team, collaborating with cross-functional teams including DevOps and Analytics to deliver enterprise-level solutions.
 
 #### Teams I've Worked With
 
@@ -33,11 +33,11 @@ I'm currently part of Verizon's Network and Security team, collaborating with cr
 
 #### Impact at Verizon
 
-**Test Automation Impact**: Designed and executed a comprehensive test automation framework for a distributed analytics environment using Playwright. This resulted in over 200 E2E tests across UI, APIs, and data visualizations, leading to a 90% reduction in manual regression testing and significantly improved deployment confidence.
+**Test Automation**: Designed and executed a comprehensive test automation framework for a distributed analytics environment using Playwright. This resulted in over 200 E2E tests across UI, APIs, and data visualizations, leading to a 90% reduction in manual regression testing and significantly improved deployment confidence.
 
-**Security & Compliance Impact**: Managed the end-to-end vulnerability management lifecycle for critical projects, protecting applications from numerous threats. Ensured continuous ISO 27001 compliance by integrating SAST (Fortify), SCA (BlackDuck), and container security (Sysdig) scanning, reducing security vulnerabilities by 85%.
+**Security & Compliance**: Managed the end-to-end vulnerability management lifecycle for critical projects, protecting applications from numerous threats. Ensured continuous ISO 27001 compliance by integrating SAST (Fortify), SCA (BlackDuck), and container security (Sysdig) scanning, reducing security vulnerabilities by 85%.
 
-**AI/ML Impact**: Developed an AI utility using Python, LangChain, and AWS to parse and summarize complex Terraform plans. This significantly improved clarity and reduced review time for non-technical operations teams by 70%, enabling faster infrastructure deployments.
+**AI/ML**: Developed an AI utility using Python, LangChain, and AWS to parse and summarize complex Terraform plans. This significantly improved clarity and reduced review time for non-technical operations teams by 70%, enabling faster infrastructure deployments.
 
 ## Apprenticeship Projects
 
@@ -50,19 +50,19 @@ A full-stack eCommerce inventory management system built with React, Node.js, an
 **Technologies**: React, Node.js, Express, SQLite  
 [GitHub](https://github.com/KLY-Titans/inventory-app) | [Live Site](https://inventory-app-kp4e.onrender.com/)
 
-### [QuickThinx Blogging Platform](https://github.com/zluigon/quickthinx)
+### [QuickThinx Blogging Platform]()
 
 A secure full-stack blogging application with JWT authentication and author-only content management. Built with Angular and Node.js, featuring comprehensive user authentication and authorization.
 
 **Technologies**: Angular, TypeScript, Node.js, Express, MongoDB  
-[GitHub](https://github.com/zluigon/quickthinx) | [Live Site](https://quickthinx.onrender.com/)
+[GitHub](https://github.com/zluigon/quickthinx)
 
-### [Planet Express API](https://github.com/Farnsworth-Enterprises/PlanetExpress)
+### [Planet Express API]()
 
 A secure backend API service for internal shipment management with role-based access control. Implements JWT authentication and full CRUD operations for shipment tracking.
 
 **Technologies**: Node.js, Express, SQLite, JWT Authentication  
-[GitHub](https://github.com/Farnsworth-Enterprises/PlanetExpress) | [Live Site](https://planet-express-api.onrender.com/)
+[GitHub](https://github.com/Farnsworth-Enterprises/PlanetExpress)
 
 ### [PlanEx Crew Management](https://planexcrew.netlify.app/)
 
