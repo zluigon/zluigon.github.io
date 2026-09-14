@@ -12,7 +12,7 @@
 		"format": "prettier --write .",
 		"depcheck": "depcheck",
 		"predeploy": "npm ci && npm run lint && npm run check && npm run build",
-		"deploy": "npm run build && echo 'luisgonzalez.dev' > build/CNAME && npx gh-pages -d build"
+		"deploy": "echo 'luisgonzalez.dev' > build/CNAME && npx gh-pages -d build"
 	},
 	"devDependencies": {
 		"@iconify-json/carbon": "^1.1.28",
