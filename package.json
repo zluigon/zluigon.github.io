@@ -11,7 +11,7 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"depcheck": "depcheck",
-		"pre-deploy": "npm ci && npm run lint && npm run check && npm run build",
+		"predeploy": "npm ci && npm run lint && npm run check && npm run build",
 		"deploy": "npm run build && echo 'luisgonzalez.dev' > build/CNAME && npx gh-pages -d build"
 	},
 	"devDependencies": {
