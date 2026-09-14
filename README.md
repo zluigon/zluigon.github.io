@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-Welcome to my portfolio! I'm a Software Engineer passionate about building AI-powered applications, cloud infrastructure, and scalable full-stack solutions. Currently working as a Thrive Software Engineering Apprentice at Verizon, where I've had the opportunity to work on impactful projects that drive innovation and efficiency.
+Welcome to my portfolio! I'm a Software Engineer passionate about building AI-powered applications, cloud infrastructure, and scalable full-stack solutions. Currently working as a Software Engineer at Verizon, where I've had the opportunity to work on impactful projects that drive innovation and efficiency.
 
 ## About Me
 
@@ -18,9 +18,9 @@ My passion for technology stems from a desire to create solutions that improve p
 - **DevOps & Automation**: Streamlining development workflows and deployment processes
 - **Security & Compliance**: Implementing secure, compliant solutions for enterprise environments
 
-## Apprenticeship Experience
+## Experience
 
-### Verizon - Thrive Software Engineering Apprentice
+### Verizon - Software Engineer
 
 _August 2024 - Present | Basking Ridge, NJ_
 
@@ -37,7 +37,7 @@ I'm currently part of Verizon's Network and Security team, collaborating with cr
 
 **Security & Compliance**: Managed the end-to-end vulnerability management lifecycle for critical projects, protecting applications from numerous threats. Ensured continuous ISO 27001 compliance by integrating SAST (Fortify), SCA (BlackDuck), and container security (Sysdig) scanning, reducing security vulnerabilities by 85%.
 
-**AI/ML**: Developed an AI utility using Python, LangChain, and AWS to parse and summarize complex Terraform plans. This significantly improved clarity and reduced review time for non-technical operations teams by 70%, enabling faster infrastructure deployments.
+**AI/ML**: Developed an AI tools using Python, LangChain, and AWS to parse and summarize complex Terraform plans. This significantly improved clarity and reduced review time for non-technical operations teams by 70%, enabling faster infrastructure deployments.
 
 ## Apprenticeship Projects
 

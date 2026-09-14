@@ -10,7 +10,7 @@ export const items: Array<Education> = [
 		logo: OrganizationLogos.Multiverse,
 		organization: 'Multiverse',
 		period: { from: new Date(2024, 7), to: new Date(2025, 6) },
-		shortDescription: '12-month apprenticeship program',
+		shortDescription: 'apprenticeship program',
 		slug: 'multiverse',
 		subjects: ['Full Stack Development', 'Software Engineering', 'Agile Methodologies', 'DevOps'],
 		color: '#324ea8'
